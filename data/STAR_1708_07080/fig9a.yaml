@@ -1,0 +1,129 @@
+independent_variables:
+- header: {name: 'Particle-jet $p_T$ [GeV/$c$]'}
+  values:
+  - {low: 6.1, high: 6.58}
+  - {low: 7.806, high: 8.746}
+  - {low: 9.276, high: 10.156}
+  - {low: 10.93, high: 12.03}
+  - {low: 12.95, high: 14.17}
+  - {low: 15.33, high: 16.81}
+  - {low: 19.18, high: 21.06}
+  - {low: 22.25, high: 24.25}
+  - {low: 25.86, high: 28.06}
+  - {low: 29.98, high: 32.58}
+  - {low: 34.95, high: 37.75}
+  - {low: 41.01, high: 44.21}
+  - {low: 48.97, high: 52.77}
+dependent_variables:
+- header: {name: '$A_{UT}^{\sin(\theta_S)}$'}
+  qualifiers:
+  - {name: 'Particle-jet $p_T$ [GeV/$c$]', value: '$-1 < \eta_{jet}< -0.5$'}
+  values:
+  - value: -0.0016
+    errors:
+    - {symerror: 0.010, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}
+  - value: -0.00040
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.00006, label: 'Syst. error'}
+  - value: 0.0072
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.0013, label: 'Syst. error'}
+  - value: -0.0020
+    errors:
+    - {symerror: 0.004, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}
+  - value: 0.0046
+    errors:
+    - {symerror: 0.004, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}
+  - value: 0.00482
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.00035, label: 'Syst. error'}
+  - value: -0.00274
+    errors:
+    - {symerror: 0.0028, label: 'Stat. error'}
+    - {symerror: 0.00017, label: 'Syst. error'}
+  - value: -0.00112
+    errors:
+    - {symerror: 0.0030, label: 'Stat. error'}
+    - {symerror: 0.00009, label: 'Syst. error'}
+  - value: -0.00126
+    errors:
+    - {symerror: 0.004, label: 'Stat. error'}
+    - {symerror: 0.00009, label: 'Syst. error'}
+  - value: -0.00597
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.00022, label: 'Syst. error'}
+  - value: -0.00834
+    errors:
+    - {symerror: 0.007, label: 'Stat. error'}
+    - {symerror: 0.00033, label: 'Syst. error'}
+  - value: -0.0157
+    errors:
+    - {symerror: 0.010, label: 'Stat. error'}
+    - {symerror: 0.0009, label: 'Syst. error'}
+  - value: 0.0145
+    errors:
+    - {symerror: 0.017, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S)}$'}
+  qualifiers:
+  - {name: 'Particle-jet $p_T$ [GeV/$c$]', value: '$0.5 < \eta_{jet}< 1$'}
+  values:
+  - value: -0.00087
+    errors:
+    - {symerror: 0.010, label: 'Stat. error'}
+    - {symerror: 0.00031, label: 'Syst. error'}
+  - value: 0.0022
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.0007, label: 'Syst. error'}
+  - value: 0.0091
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.0014, label: 'Syst. error'}
+  - value: 0.011
+    errors:
+    - {symerror: 0.004, label: 'Stat. error'}
+    - {symerror: 0.004, label: 'Syst. error'}
+  - value: 0.0049
+    errors:
+    - {symerror: 0.004, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}
+  - value: -0.0068
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}
+  - value: -0.00242
+    errors:
+    - {symerror: 0.0028, label: 'Stat. error'}
+    - {symerror: 0.00015, label: 'Syst. error'}
+  - value: 0.0064
+    errors:
+    - {symerror: 0.0030, label: 'Stat. error'}
+    - {symerror: 0.0004, label: 'Syst. error'}
+  - value: -0.00220
+    errors:
+    - {symerror: 0.0035, label: 'Stat. error'}
+    - {symerror: 0.00010, label: 'Syst. error'}
+  - value: 0.00083
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.00015, label: 'Syst. error'}
+  - value: 0.00573
+    errors:
+    - {symerror: 0.007, label: 'Stat. error'}
+    - {symerror: 0.00028, label: 'Syst. error'}
+  - value: -0.0085
+    errors:
+    - {symerror: 0.010, label: 'Stat. error'}
+    - {symerror: 0.0004, label: 'Syst. error'}
+  - value: 0.0054
+    errors:
+    - {symerror: 0.017, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}

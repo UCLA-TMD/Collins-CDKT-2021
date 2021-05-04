@@ -1,0 +1,105 @@
+independent_variables:
+- header: {name: 'z'}
+  values:
+  - {low: 0.128, high: 0.14}
+  - {low: 0.2206, high: 0.2406}
+  - {low: 0.3125, high: 0.3405}
+  - {low: 0.4041, high: 0.4401}
+  - {low: 0.5163, high: 0.5743}
+dependent_variables:
+- header: {name: '$A_{UT}^{\sin(\theta_S -2\theta_H)}$'}
+  qualifiers:
+  - {name: 'z', value: '$A_{UT}(\pi^+, 0 < \eta_{jet}< 1)$ for $<p_{T, jet}> = 31.0$ GeV/$c$'}
+  values:
+  - value: 0.00213
+    errors:
+    - {symerror: 0.0030, label: 'Stat. error'}
+    - {symerror: 0.00014, label: 'Syst. error'}
+  - value: 0.00183
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00012, label: 'Syst. error'}
+  - value: -0.0229
+    errors:
+    - {symerror: 0.012, label: 'Stat. error'}
+    - {symerror: 0.0012, label: 'Syst. error'}
+  - value: -0.0169
+    errors:
+    - {symerror: 0.021, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}
+  - value: 0.0474
+    errors:
+    - {symerror: 0.04, label: 'Stat. error'}
+    - {symerror: 0.0032, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S -2\theta_H)}$'}
+  qualifiers:
+  - {name: 'z', value: '$A_{UT}(\pi^-, 0 < \eta_{jet}< 1)$ for $<p_{T, jet}> = 31.0$ GeV/$c$'}
+  values:
+  - value: -0.00031
+    errors:
+    - {symerror: 0.0031, label: 'Stat. error'}
+    - {symerror: 0.00007, label: 'Syst. error'}
+  - value: -0.0135
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}
+  - value: -0.0092
+    errors:
+    - {symerror: 0.013, label: 'Stat. error'}
+    - {symerror: 0.0004, label: 'Syst. error'}
+  - value: -0.0116
+    errors:
+    - {symerror: 0.025, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}
+  - value: -0.0505
+    errors:
+    - {symerror: 0.05, label: 'Stat. error'}
+    - {symerror: 0.0018, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S -2\theta_H)}$'}
+  qualifiers:
+  - {name: 'z', value: '$A_{UT}(\pi^+, -1 < \eta_{jet}< 0)$ for $<p_{T, jet}> = 31.0$ GeV/$c$'}
+  values:
+  - value: 0.00564
+    errors:
+    - {symerror: 0.0030, label: 'Stat. error'}
+    - {symerror: 0.00024, label: 'Syst. error'}
+  - value: -0.00784
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00032, label: 'Syst. error'}
+  - value: -0.0209
+    errors:
+    - {symerror: 0.012, label: 'Stat. error'}
+    - {symerror: 0.0011, label: 'Syst. error'}
+  - value: 0.0343
+    errors:
+    - {symerror: 0.021, label: 'Stat. error'}
+    - {symerror: 0.0012, label: 'Syst. error'}
+  - value: -0.0193
+    errors:
+    - {symerror: 0.04, label: 'Stat. error'}
+    - {symerror: 0.0031, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S -2\theta_H)}$'}
+  qualifiers:
+  - {name: 'z', value: '$A_{UT}(\pi^-, -1 < \eta_{jet}< 0)$ for $<p_{T, jet}> = 31.0$ GeV/$c$'}
+  values:
+  - value: -0.00120
+    errors:
+    - {symerror: 0.0031, label: 'Stat. error'}
+    - {symerror: 0.00009, label: 'Syst. error'}
+  - value: -0.00014
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00006, label: 'Syst. error'}
+  - value: 0.0124
+    errors:
+    - {symerror: 0.013, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}
+  - value: 0.0357
+    errors:
+    - {symerror: 0.025, label: 'Stat. error'}
+    - {symerror: 0.0015, label: 'Syst. error'}
+  - value: 0.0279
+    errors:
+    - {symerror: 0.05, label: 'Stat. error'}
+    - {symerror: 0.0010, label: 'Syst. error'}

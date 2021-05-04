@@ -1,0 +1,241 @@
+independent_variables:
+- header: {name: 'Particle-jet $p_T$ [GeV/$c$]'}
+  values:
+  - {low: 5.972, high: 6.512}
+  - {low: 7.473, high: 8.513}
+  - {low: 9.007, high: 10.247}
+  - {low: 10.74, high: 12.3}
+  - {low: 12.86, high: 14.4}
+  - {low: 15.37, high: 16.65}
+  - {low: 19.36, high: 21.32}
+  - {low: 22.37, high: 24.37}
+  - {low: 25.87, high: 28.07}
+  - {low: 30.03, high: 32.43}
+  - {low: 34.89, high: 37.69}
+  - {low: 41.04, high: 44.24}
+  - {low: 49.37, high: 52.97}
+dependent_variables:
+- header: {name: '$A_{UT}^{\sin(\theta_S -2\theta_H)}$'}
+  qualifiers:
+  - {name: 'Particle-jet $p_T$ [GeV/$c$]', value: '$A_{UT}(\pi^+, 0 < \eta_{jet}< 1)$ for $<z> = 0.14$'}
+  values:
+  - value: 0.0197
+    errors:
+    - {symerror: 0.024, label: 'Stat. error'}
+    - {symerror: 0.0018, label: 'Syst. error'}
+  - value: 0.011
+    errors:
+    - {symerror: 0.014, label: 'Stat. error'}
+    - {symerror: 0.005, label: 'Syst. error'}
+  - value: 0.016
+    errors:
+    - {symerror: 0.010, label: 'Stat. error'}
+    - {symerror: 0.004, label: 'Syst. error'}
+  - value: 0.0083
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.0015, label: 'Syst. error'}
+  - value: 0.0018
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.0004, label: 'Syst. error'}
+  - value: -0.00202
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.00032, label: 'Syst. error'}
+  - value: 0.00258
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00026, label: 'Syst. error'}
+  - value: -0.00135
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.00016, label: 'Syst. error'}
+  - value: 0.00607
+    errors:
+    - {symerror: 0.004, label: 'Stat. error'}
+    - {symerror: 0.00023, label: 'Syst. error'}
+  - value: -0.00255
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00012, label: 'Syst. error'}
+  - value: 0.00157
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.00024, label: 'Syst. error'}
+  - value: -0.0134
+    errors:
+    - {symerror: 0.012, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}
+  - value: -0.0040
+    errors:
+    - {symerror: 0.021, label: 'Stat. error'}
+    - {symerror: 0.0004, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S -2\theta_H)}$'}
+  qualifiers:
+  - {name: 'Particle-jet $p_T$ [GeV/$c$]', value: '$A_{UT}(\pi^-, 0 < \eta_{jet}< 1)$ for $<z> = 0.14$'}
+  values:
+  - value: 0.0226
+    errors:
+    - {symerror: 0.025, label: 'Stat. error'}
+    - {symerror: 0.0009, label: 'Syst. error'}
+  - value: -0.0132
+    errors:
+    - {symerror: 0.013, label: 'Stat. error'}
+    - {symerror: 0.0023, label: 'Syst. error'}
+  - value: -0.0015
+    errors:
+    - {symerror: 0.011, label: 'Stat. error'}
+    - {symerror: 0.0004, label: 'Syst. error'}
+  - value: 0.0074
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.0013, label: 'Syst. error'}
+  - value: -0.0081
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.0015, label: 'Syst. error'}
+  - value: 0.00225
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.00033, label: 'Syst. error'}
+  - value: 0.00018
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00025, label: 'Syst. error'}
+  - value: -0.00134
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.00018, label: 'Syst. error'}
+  - value: 0.00189
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00010, label: 'Syst. error'}
+  - value: -0.00445
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00017, label: 'Syst. error'}
+  - value: 0.0133
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}
+  - value: -0.00172
+    errors:
+    - {symerror: 0.013, label: 'Stat. error'}
+    - {symerror: 0.00016, label: 'Syst. error'}
+  - value: 0.0228
+    errors:
+    - {symerror: 0.022, label: 'Stat. error'}
+    - {symerror: 0.0009, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S -2\theta_H)}$'}
+  qualifiers:
+  - {name: 'Particle-jet $p_T$ [GeV/$c$]', value: '$A_{UT}(\pi^+, -1 < \eta_{jet}< 0)$ for $<z> = 0.14$'}
+  values:
+  - value: 0.0309
+    errors:
+    - {symerror: 0.024, label: 'Stat. error'}
+    - {symerror: 0.0022, label: 'Syst. error'}
+  - value: 0.0131
+    errors:
+    - {symerror: 0.014, label: 'Stat. error'}
+    - {symerror: 0.0034, label: 'Syst. error'}
+  - value: -0.021
+    errors:
+    - {symerror: 0.010, label: 'Stat. error'}
+    - {symerror: 0.006, label: 'Syst. error'}
+  - value: 0.0150
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.0027, label: 'Syst. error'}
+  - value: 0.0042
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.0008, label: 'Syst. error'}
+  - value: -0.00017
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.00016, label: 'Syst. error'}
+  - value: -0.0081
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.0007, label: 'Syst. error'}
+  - value: -0.00291
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.00026, label: 'Syst. error'}
+  - value: 0.00251
+    errors:
+    - {symerror: 0.005, label: 'Stat. error'}
+    - {symerror: 0.00012, label: 'Syst. error'}
+  - value: 0.00690
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00023, label: 'Syst. error'}
+  - value: 0.00630
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.00028, label: 'Syst. error'}
+  - value: 0.0172
+    errors:
+    - {symerror: 0.012, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}
+  - value: 0.0068
+    errors:
+    - {symerror: 0.021, label: 'Stat. error'}
+    - {symerror: 0.0007, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S -2\theta_H)}$'}
+  qualifiers:
+  - {name: 'Particle-jet $p_T$ [GeV/$c$]', value: '$A_{UT}(\pi^-, -1 < \eta_{jet}< 0)$ for $<z> = 0.14$'}
+  values:
+  - value: 0.018
+    errors:
+    - {symerror: 0.025, label: 'Stat. error'}
+    - {symerror: 0.007, label: 'Syst. error'}
+  - value: -0.010
+    errors:
+    - {symerror: 0.013, label: 'Stat. error'}
+    - {symerror: 0.004, label: 'Syst. error'}
+  - value: 0.0050
+    errors:
+    - {symerror: 0.011, label: 'Stat. error'}
+    - {symerror: 0.0026, label: 'Syst. error'}
+  - value: 0.00141
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.00032, label: 'Syst. error'}
+  - value: 0.0118
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.0021, label: 'Syst. error'}
+  - value: -0.0075
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}
+  - value: 0.00148
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00019, label: 'Syst. error'}
+  - value: -0.00289
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00027, label: 'Syst. error'}
+  - value: -0.00296
+    errors:
+    - {symerror: 0.004, label: 'Stat. error'}
+    - {symerror: 0.00012, label: 'Syst. error'}
+  - value: -0.00310
+    errors:
+    - {symerror: 0.006, label: 'Stat. error'}
+    - {symerror: 0.00014, label: 'Syst. error'}
+  - value: -0.00187
+    errors:
+    - {symerror: 0.008, label: 'Stat. error'}
+    - {symerror: 0.00018, label: 'Syst. error'}
+  - value: 0.0232
+    errors:
+    - {symerror: 0.013, label: 'Stat. error'}
+    - {symerror: 0.0007, label: 'Syst. error'}
+  - value: -0.0070
+    errors:
+    - {symerror: 0.022, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}

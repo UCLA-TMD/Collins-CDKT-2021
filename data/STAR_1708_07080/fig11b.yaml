@@ -1,0 +1,33 @@
+independent_variables:
+- header: {name: 'z'}
+  values:
+  - {low: 0.1464, high: 0.164}
+  - {low: 0.237, high: 0.263}
+  - {low: 0.3356, high: 0.3676}
+  - {low: 0.4378, high: 0.4818}
+  - {low: 0.5807, high: 0.6687}
+dependent_variables:
+- header: {name: '$A_{UT}^{\sin(\theta_S -2\theta_H)}$'}
+  qualifiers:
+  - {name: 'z', value: '$\pi^{\pm}, |\eta_{jet}| < 1, <p_{T, jet}> = 10.6$ GeV/$c$'}
+  values:
+  - value: 0.0037
+    errors:
+    - {symerror: 0.0022, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}
+  - value: 0.0042
+    errors:
+    - {symerror: 0.0034, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}
+  - value: 0.0086
+    errors:
+    - {symerror: 0.004, label: 'Stat. error'}
+    - {symerror: 0.0010, label: 'Syst. error'}
+  - value: -0.0090
+    errors:
+    - {symerror: 0.007, label: 'Stat. error'}
+    - {symerror: 0.0013, label: 'Syst. error'}
+  - value: 0.0117
+    errors:
+    - {symerror: 0.013, label: 'Stat. error'}
+    - {symerror: 0.0016, label: 'Syst. error'}
