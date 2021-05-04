@@ -1,0 +1,96 @@
+dependent_variables:
+- header: {name: ASYM(NAME=COLLINS)}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.1-0.2}
+  values:
+  - errors:
+    - {symerror: 0.0056}
+    value: 0.0034
+  - errors:
+    - {symerror: 0.0035}
+    value: 0.0081
+  - errors:
+    - {symerror: 0.0046}
+    value: 0.0142
+  - errors:
+    - {symerror: 0.0068}
+    value: 0.0164
+  - errors:
+    - {symerror: 0.0139}
+    value: -0.0059
+- header: {name: Q^2}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.1-0.2}
+  values:
+  - {value: 3.69}
+  - {value: 3.68}
+  - {value: 3.77}
+  - {value: 3.86}
+  - {value: 3.92}
+- header: {name: Y}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.1-0.2}
+  values:
+  - {value: 0.32}
+  - {value: 0.34}
+  - {value: 0.36}
+  - {value: 0.4}
+  - {value: 0.48}
+- header: {name: X}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.1-0.2}
+  values:
+  - {value: 0.049}
+  - {value: 0.047}
+  - {value: 0.043}
+  - {value: 0.039}
+  - {value: 0.032}
+- header: {name: Z}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.1-0.2}
+  values:
+  - {value: 0.14}
+  - {value: 0.14}
+  - {value: 0.14}
+  - {value: 0.15}
+  - {value: 0.15}
+- header: {name: W}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.1-0.2}
+  values:
+  - {value: 9.24}
+  - {value: 9.47}
+  - {value: 9.89}
+  - {value: 10.52}
+  - {value: 11.59}
+- header: {name: Correlation with Sivers}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.1-0.2}
+  values:
+  - {value: 0.12}
+  - {value: 0.12}
+  - {value: 0.1}
+  - {value: 0.07}
+  - {value: 0.04}
+independent_variables:
+- header: {name: PT, units: GEV}
+  values:
+  - {high: 0.2, low: 0.1, value: 0.154}
+  - {high: 0.4, low: 0.2, value: 0.298}
+  - {high: 0.6, low: 0.4, value: 0.487}
+  - {high: 0.9, low: 0.6, value: 0.713}
+  - {value: 1.114 (BIN=>0.900)}

@@ -1,0 +1,97 @@
+dependent_variables:
+- header: {name: ASYM(NAME=COLLINS)}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  values:
+  - errors:
+    - {symerror: 0.0038}
+    value: 0.0064
+  - errors:
+    - {symerror: 0.0046}
+    value: 0.0225
+  - errors:
+    - {symerror: 0.0054}
+    value: 0.0038
+  - errors:
+    - {symerror: 0.0064}
+    value: 0.0139
+  - errors:
+    - {symerror: 0.0056}
+    value: 0.0191
+  - errors:
+    - {symerror: 0.0065}
+    value: 0.0162
+  - errors:
+    - {symerror: 0.0094}
+    value: 0.0024
+- header: {name: Q^2}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  values:
+  - {value: 3.57}
+  - {value: 3.54}
+  - {value: 3.5}
+  - {value: 3.44}
+  - {value: 3.36}
+  - {value: 3.19}
+  - {value: 2.92}
+- header: {name: Y}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  values:
+  - {value: 0.33}
+  - {value: 0.33}
+  - {value: 0.33}
+  - {value: 0.32}
+  - {value: 0.32}
+  - {value: 0.32}
+  - {value: 0.32}
+- header: {name: PT}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  values:
+  - {value: 0.46}
+  - {value: 0.48}
+  - {value: 0.51}
+  - {value: 0.52}
+  - {value: 0.55}
+  - {value: 0.57}
+  - {value: 0.56}
+- header: {name: X}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  values:
+  - {value: 0.046}
+  - {value: 0.046}
+  - {value: 0.046}
+  - {value: 0.046}
+  - {value: 0.045}
+  - {value: 0.044}
+  - {value: 0.041}
+- header: {name: W}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  values:
+  - {value: 9.43}
+  - {value: 9.35}
+  - {value: 9.32}
+  - {value: 9.3}
+  - {value: 9.25}
+  - {value: 9.24}
+  - {value: 9.22}
+independent_variables:
+- header: {name: Z}
+  values:
+  - {high: 0.25, low: 0.2, value: 0.222}
+  - {high: 0.3, low: 0.25, value: 0.273}
+  - {high: 0.35, low: 0.3, value: 0.323}
+  - {high: 0.4, low: 0.35, value: 0.373}
+  - {high: 0.5, low: 0.4, value: 0.446}
+  - {high: 0.65, low: 0.5, value: 0.566}
+  - {high: 0.8, low: 0.65, value: 0.718}

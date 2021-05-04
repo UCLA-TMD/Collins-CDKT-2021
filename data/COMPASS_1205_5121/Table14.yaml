@@ -1,0 +1,93 @@
+dependent_variables:
+- header: {name: ASYM(NAME=COLLINS)}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: X, value: '> 0.032'}
+  - {name: Y, value: 0.05-0.1}
+  values:
+  - errors:
+    - {symerror: 0.013}
+    value: -0.0165
+  - errors:
+    - {symerror: 0.0076}
+    value: 0.0183
+  - errors:
+    - {symerror: 0.0082}
+    value: 0.0187
+  - errors:
+    - {symerror: 0.0073}
+    value: 0.0499
+- header: {name: Q^2}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: X, value: '> 0.032'}
+  - {name: Y, value: 0.05-0.1}
+  values:
+  - {value: 1.15}
+  - {value: 1.44}
+  - {value: 2.16}
+  - {value: 4.67}
+- header: {name: Y}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: X, value: '> 0.032'}
+  - {name: Y, value: 0.05-0.1}
+  values:
+  - {value: 0.09}
+  - {value: 0.08}
+  - {value: 0.07}
+  - {value: 0.07}
+- header: {name: PT}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: X, value: '> 0.032'}
+  - {name: Y, value: 0.05-0.1}
+  values:
+  - {value: 0.42}
+  - {value: 0.4}
+  - {value: 0.4}
+  - {value: 0.42}
+- header: {name: Z}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: X, value: '> 0.032'}
+  - {name: Y, value: 0.05-0.1}
+  values:
+  - {value: 0.4}
+  - {value: 0.4}
+  - {value: 0.4}
+  - {value: 0.39}
+- header: {name: W}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: X, value: '> 0.032'}
+  - {name: Y, value: 0.05-0.1}
+  values:
+  - {value: 5.11}
+  - {value: 4.67}
+  - {value: 4.47}
+  - {value: 4.2}
+- header: {name: Correlation with Sivers}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON- X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: X, value: '> 0.032'}
+  - {name: Y, value: 0.05-0.1}
+  values:
+  - {value: 0.29}
+  - {value: 0.26}
+  - {value: 0.21}
+  - {value: 0.05}
+independent_variables:
+- header: {name: X}
+  values:
+  - {high: 0.05, low: 0.032, value: 0.0437}
+  - {high: 0.08, low: 0.05, value: 0.0643}
+  - {high: 0.13, low: 0.08, value: 0.1007}
+  - {high: 0.7, low: 0.13, value: 0.2155}
