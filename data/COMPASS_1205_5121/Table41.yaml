@@ -1,0 +1,76 @@
+dependent_variables:
+- header: {name: ASYM(NAME=COLLINS)}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - errors:
+    - {symerror: 0.0041}
+    value: -0.0083
+  - errors:
+    - {symerror: 0.0048}
+    value: -0.0149
+  - errors:
+    - {symerror: 0.0056}
+    value: -0.0123
+- header: {name: Q^2}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 3.84}
+  - {value: 3.86}
+  - {value: 3.88}
+- header: {name: Y}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 0.33}
+  - {value: 0.32}
+  - {value: 0.32}
+- header: {name: PT}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 0.46}
+  - {value: 0.48}
+  - {value: 0.5}
+- header: {name: X}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 0.049}
+  - {value: 0.051}
+  - {value: 0.052}
+- header: {name: W}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 9.34}
+  - {value: 9.24}
+  - {value: 9.16}
+- header: {name: Correlation with Sivers}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 0.11}
+  - {value: 0.1}
+  - {value: 0.1}
+independent_variables:
+- header: {name: Z}
+  values:
+  - {high: 0.25, low: 0.2, value: 0.224}
+  - {high: 0.3, low: 0.25, value: 0.274}
+  - {high: 0.35, low: 0.3, value: 0.324}

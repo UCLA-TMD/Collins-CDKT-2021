@@ -1,0 +1,88 @@
+independent_variables:
+- header: {name: 'j$_T$ [GeV/$c$]'}
+  values:
+  - {low: 0.4224, high: 0.4924}
+  - {low: 0.6196, high: 0.6716}
+  - {low: 0.7807, high: 0.8967}
+  - {low: 1.445, high: 1.551}
+dependent_variables:
+- header: {name: '$A_{UT}^{\sin(\theta_S - \theta_H)}$'}
+  qualifiers:
+  - {name: 'j$_T$ [GeV/$c$]', value: '$A_{UT}(\pi^+, 0 < \eta_{jet}< 1)$ for $<z> = 0.37$'}
+  values:
+  - value: 0.0039
+    errors:
+    - {symerror: 0.026, label: 'Stat. error'}
+    - {symerror: 0.0007, label: 'Syst. error'}
+  - value: 0.0148
+    errors:
+    - {symerror: 0.017, label: 'Stat. error'}
+    - {symerror: 0.0007, label: 'Syst. error'}
+  - value: 0.0201
+    errors:
+    - {symerror: 0.017, label: 'Stat. error'}
+    - {symerror: 0.0008, label: 'Syst. error'}
+  - value: -0.0097
+    errors:
+    - {symerror: 0.020, label: 'Stat. error'}
+    - {symerror: 0.0005, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S - \theta_H)}$'}
+  qualifiers:
+  - {name: 'j$_T$ [GeV/$c$]', value: '$A_{UT}(\pi^-, 0 < \eta_{jet}< 1)$ for $<z> = 0.37$'}
+  values:
+  - value: -0.035
+    errors:
+    - {symerror: 0.029, label: 'Stat. error'}
+    - {symerror: 0.005, label: 'Syst. error'}
+  - value: -0.00578
+    errors:
+    - {symerror: 0.019, label: 'Stat. error'}
+    - {symerror: 0.00032, label: 'Syst. error'}
+  - value: -0.0602
+    errors:
+    - {symerror: 0.021, label: 'Stat. error'}
+    - {symerror: 0.0024, label: 'Syst. error'}
+  - value: -0.0283
+    errors:
+    - {symerror: 0.022, label: 'Stat. error'}
+    - {symerror: 0.0015, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S - \theta_H)}$'}
+  qualifiers:
+  - {name: 'j$_T$ [GeV/$c$]', value: '$A_{UT}(\pi^+, -1 < \eta_{jet}< 0)$ for $<z> = 0.37$'}
+  values:
+  - value: 0.0305
+    errors:
+    - {symerror: 0.027, label: 'Stat. error'}
+    - {symerror: 0.0027, label: 'Syst. error'}
+  - value: 0.00076
+    errors:
+    - {symerror: 0.017, label: 'Stat. error'}
+    - {symerror: 0.00021, label: 'Syst. error'}
+  - value: -0.00343
+    errors:
+    - {symerror: 0.017, label: 'Stat. error'}
+    - {symerror: 0.00034, label: 'Syst. error'}
+  - value: -0.0222
+    errors:
+    - {symerror: 0.019, label: 'Stat. error'}
+    - {symerror: 0.0009, label: 'Syst. error'}
+- header: {name: '$A_{UT}^{\sin(\theta_S - \theta_H)}$'}
+  qualifiers:
+  - {name: 'j$_T$ [GeV/$c$]', value: '$A_{UT}(\pi^-, -1 < \eta_{jet}< 0)$ for $<z> = 0.37$'}
+  values:
+  - value: -0.0171
+    errors:
+    - {symerror: 0.030, label: 'Stat. error'}
+    - {symerror: 0.0020, label: 'Syst. error'}
+  - value: 0.0098
+    errors:
+    - {symerror: 0.019, label: 'Stat. error'}
+    - {symerror: 0.0004, label: 'Syst. error'}
+  - value: 0.0212
+    errors:
+    - {symerror: 0.021, label: 'Stat. error'}
+    - {symerror: 0.0013, label: 'Syst. error'}
+  - value: -0.0060
+    errors:
+    - {symerror: 0.022, label: 'Stat. error'}
+    - {symerror: 0.0006, label: 'Syst. error'}

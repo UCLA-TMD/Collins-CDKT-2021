@@ -1,0 +1,96 @@
+dependent_variables:
+- header: {name: ASYM(NAME=COLLINS)}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - errors:
+    - {symerror: 0.018}
+    value: -0.0043
+  - errors:
+    - {symerror: 0.0058}
+    value: -0.0063
+  - errors:
+    - {symerror: 0.0043}
+    value: -0.0019
+  - errors:
+    - {symerror: 0.0053}
+    value: -0.0212
+  - errors:
+    - {symerror: 0.008}
+    value: -0.0391
+- header: {name: Q^2}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 1.27}
+  - {value: 1.72}
+  - {value: 2.54}
+  - {value: 5.45}
+  - {value: 14.19}
+- header: {name: Y}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 0.68}
+  - {value: 0.43}
+  - {value: 0.27}
+  - {value: 0.23}
+  - {value: 0.23}
+- header: {name: PT}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 0.52}
+  - {value: 0.5}
+  - {value: 0.47}
+  - {value: 0.46}
+  - {value: 0.45}
+- header: {name: Z}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 0.26}
+  - {value: 0.26}
+  - {value: 0.26}
+  - {value: 0.26}
+  - {value: 0.27}
+- header: {name: W}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 14.2}
+  - {value: 11.14}
+  - {value: 8.55}
+  - {value: 7.79}
+  - {value: 7.15}
+- header: {name: Correlation with Sivers}
+  qualifiers:
+  - {name: RE, value: MU+ P --> HADRON+ X}
+  - {name: SQRT(S), units: GeV, value: '160.0'}
+  - {name: Z, value: 0.2-0.35}
+  values:
+  - {value: 0.07}
+  - {value: 0.08}
+  - {value: 0.14}
+  - {value: 0.12}
+  - {value: 0.01}
+independent_variables:
+- header: {name: X}
+  values:
+  - {high: 0.008, low: 0.003, value: 0.0063}
+  - {high: 0.02, low: 0.008, value: 0.0139}
+  - {high: 0.05, low: 0.02, value: 0.0325}
+  - {high: 0.13, low: 0.05, value: 0.0785}
+  - {high: 0.7, low: 0.13, value: 0.2043}

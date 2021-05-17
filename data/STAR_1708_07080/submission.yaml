@@ -1,0 +1,308 @@
+# Start a new submission. This section is optional for the provision of information about the overall submission.
+---
+
+additional_resources: # additional references (e.g. experiment TWiki page for analysis)
+- {location: "https://drupal.star.bnl.gov/STAR/publications/azimuthal-transverse-single-spin-asymmetries-inclusive-jets-and-charged-pions-within-je", description: "web page with auxiliary material"}
+- {location: "https://arxiv.org/abs/1708.07080", description: "arXiv"}
+
+comment: | # Information that applies to all data tables.
+---
+# Start of table entries.
+# This is Figure 9a.
+name: "Figure 9a"
+description: Inclusive jet asymmetries $A_{UT}^{\sin(\theta_S)}$ as a function of particle-jet $p_T$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/SiversPt.R050.v4.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/SiversPt.R050.v4.1.png", description: Image file}
+- {location: fig9.png, description: Image file}
+- {location: thumb_fig9.png, description: Thumbnail Image file}
+data_file: fig9a.yaml
+---
+# Start of table entries.
+# This is Figure 9b.
+name: "Figure 9b"
+description: Inclusive jet asymmetries $A_{UT}^{\sin(\theta_S)}$ as a function of particle-jet $p_T$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/SiversPt.R050.v4.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/SiversPt.R050.v4.1.png", description: Image file}
+- {location: fig9.png, description: Image file}
+- {location: thumb_fig9.png, description: Thumbnail Image file}
+data_file: fig9b.yaml
+---
+# Start of table entries.
+# This is Figure 10La.
+name: "Figure 10La"
+description: Collins-like asymmetries as a function of particle-jet $p_T$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikePtZ.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikePtZ.R050.v10.1.png", description: Image file}
+- {location: fig10L.png, description: Image file}
+- {location: thumb_fig10L.png, description: Thumbnail Image file}
+data_file: fig10La.yaml
+---
+# Start of table entries.
+# This is Figure 10Lb.
+name: "Figure 10Lb"
+description: Collins-like asymmetries as a function of particle-jet $p_T$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikePtZ.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikePtZ.R050.v10.1.png", description: Image file}
+- {location: fig10L.png, description: Image file}
+- {location: thumb_fig10L.png, description: Thumbnail Image file}
+data_file: fig10Lb.yaml
+---
+# Start of table entries.
+# This is Figure 10Lc.
+name: "Figure 10Lc"
+description: Collins-like asymmetries as a function of particle-jet $p_T$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikePtZ.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikePtZ.R050.v10.1.png", description: Image file}
+- {location: fig10L.png, description: Image file}
+- {location: thumb_fig10L.png, description: Thumbnail Image file}
+data_file: fig10Lc.yaml
+---
+# Start of table entries.
+# This is Figure 10Ra.
+name: "Figure 10Ra"
+description: Collins-like asymmetries as a function of pion $z$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikeZpT.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikeZpT.R050.v10.1.png", description: Image file}
+- {location: fig10R.png, description: Image file}
+- {location: thumb_fig10R.png, description: Thumbnail Image file}
+data_file: fig10Ra.yaml
+---
+# Start of table entries.
+# This is Figure 10Rb.
+name: "Figure 10Rb"
+description: Collins-like asymmetries as a function of pion $z$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikeZpT.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikeZpT.R050.v10.1.png", description: Image file}
+- {location: fig10R.png, description: Image file}
+- {location: thumb_fig10R.png, description: Thumbnail Image file}
+data_file: fig10Rb.yaml
+---
+# Start of table entries.
+# This is Figure 10Rc.
+name: "Figure 10Rc"
+description: Collins-like asymmetries as a function of pion $z$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikeZpT.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikeZpT.R050.v10.1.png", description: Image file}
+- {location: fig10R.png, description: Image file}
+- {location: thumb_fig10R.png, description: Thumbnail Image file}
+data_file: fig10Rc.yaml
+---
+# Start of table entries.
+# This is Figure 11a.
+name: "Figure 11a"
+description: Collins-like asymmetries as a function of particle-jet $p_T$ for pions reconstructed with $0.1 < z < 0.3$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikePtLowZ.R050.v11.2.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikePtLowZ.R050.v11.2.png", description: Image file}
+- {location: fig11L.png, description: Image file}
+- {location: thumb_fig11L.png, description: Thumbnail Image file}
+data_file: fig11a.yaml
+---
+# Start of table entries.
+# This is Figure 11b.
+name: "Figure 11b"
+description: Collins-like asymmetries as a function of pion $z$ for jets reconstructed with $6.0 < p_T < 13.8$ GeV/$c$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikeZLowPt.R050.v11.2.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsLikeZLowPt.R050.v11.2.png", description: Image file}
+- {location: fig11R.png, description: Image file}
+- {location: thumb_fig11R.png, description: Thumbnail Image file}
+data_file: fig11b.yaml
+---
+# Start of table entries.
+# This is Figure 12La.
+name: "Figure 12La"
+description: Collins asymmetries as a function of particle-jet $p_T$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsPtZ.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsPtZ.R050.v10.1.png", description: Image file}
+- {location: fig12L.png, description: Image file}
+- {location: thumb_fig12L.png, description: Thumbnail Image file}
+data_file: fig12La.yaml
+---
+# Start of table entries.
+# This is Figure 12Lb.
+name: "Figure 12Lb"
+description: Collins asymmetries as a function of particle-jet $p_T$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsPtZ.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsPtZ.R050.v10.1.png", description: Image file}
+- {location: fig12L.png, description: Image file}
+- {location: thumb_fig12L.png, description: Thumbnail Image file}
+data_file: fig12Lb.yaml
+---
+# Start of table entries.
+# This is Figure 12Lc.
+name: "Figure 12Lc"
+description: Collins asymmetries as a function of particle-jet $p_T$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsPtZ.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsPtZ.R050.v10.1.png", description: Image file}
+- {location: fig12L.png, description: Image file}
+- {location: thumb_fig12L.png, description: Thumbnail Image file}
+data_file: fig12Lc.yaml
+---
+# Start of table entries.
+# This is Figure 12Ra.
+name: "Figure 12Ra"
+description: Collins asymmetries as a function of pion $z$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsZpT.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsZpT.R050.v10.1.png", description: Image file}
+- {location: fig12R.png, description: Image file}
+- {location: thumb_fig12R.png, description: Thumbnail Image file}
+data_file: fig12Ra.yaml
+---
+# Start of table entries.
+# This is Figure 12Rb.
+name: "Figure 12Rb"
+description: Collins asymmetries as a function of pion $z$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsZpT.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsZpT.R050.v10.1.png", description: Image file}
+- {location: fig12R.png, description: Image file}
+- {location: thumb_fig12R.png, description: Thumbnail Image file}
+data_file: fig12Rb.yaml
+---
+# Start of table entries.
+# This is Figure 12Rc.
+name: "Figure 12Rc"
+description: Collins asymmetries as a function of pion $z$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsZpT.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsZpT.R050.v10.1.png", description: Image file}
+- {location: fig12R.png, description: Image file}
+- {location: thumb_fig12R.png, description: Thumbnail Image file}
+data_file: fig12Rc.yaml
+---
+# Start of table entries.
+# This is Figure 13a.
+name: "Figure 13a"
+description: Collins asymmetries as a function of pion $j_T$ for jets reconstructed with $22.7 < p_T < 55.0$ GeV/$c$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsJtZ.pt2.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsJtZ.pt2.R050.v10.1.png", description: Image file}
+- {location: fig13.png, description: Image file}
+- {location: thumb_fig13.png, description: Thumbnail Image file}
+data_file: fig13a.yaml
+---
+# Start of table entries.
+# This is Figure 13b.
+name: "Figure 13b"
+description: Collins asymmetries as a function of pion $j_T$ for jets reconstructed with $22.7 < p_T < 55.0$ GeV/$c$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p p --> X + $\pi^0$]}
+  - {name: cmenergies, values: [510.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsJtZ.pt2.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsJtZ.pt2.R050.v10.1.png", description: Image file}
+- {location: fig13.png, description: Image file}
+- {location: thumb_fig13.png, description: Thumbnail Image file}
+data_file: fig13b.yaml
+---
+# Start of table entries.
+# This is Figure 13c.
+name: "Figure 13c"
+description: Collins asymmetries as a function of pion $j_T$ for jets reconstructed with $22.7 < p_T < 55.0$ GeV/$c$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsJtZ.pt2.R050.v10.1.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsJtZ.pt2.R050.v10.1.png", description: Image file}
+- {location: fig13.png, description: Image file}
+- {location: thumb_fig13.png, description: Thumbnail Image file}
+data_file: fig13c.yaml
+---
+# Start of table entries.
+# This is Figure 14.
+name: "Figure 14"
+description: Collins asymmetries as a function of pion $z$ for jets reconstructed with $22.7 < p_T < 55.0$ GeV/$c$ and $0 < \eta < 1$.
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [p + p --> jet + pi + X]}
+  - {name: cmenergies, values: [500.0]}
+  - {name: phrases, values: [polarized pp collisions, jet, pions, midrapidity]}
+additional_resources: # fig thumbnails
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsZHighPt.R050.v4.6.eps", description: Image file}
+- {location: "https://drupal.star.bnl.gov/STAR/files/starpublications/270/CollinsZHighPt.R050.v4.6.png", description: Image file}
+- {location: fig14.png, description: Image file}
+- {location: thumb_fig14.png, description: Thumbnail Image file}
+data_file: fig14.yaml

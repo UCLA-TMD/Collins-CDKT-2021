@@ -1,0 +1,931 @@
+---
+additional_resources:
+- {description: Sivers asymmetries, location: /view/ins1115721}
+- {description: Correlation matrices, location: corr_xzpt.txt}
+comment: |
+  CERN-SPS.  Measurements of the transverse spin azimuthal asymmetry of charged hadrons produced in  semi-inclusive  deep inelastic scattering of a MU+ beam of energy 160 GeV from a transversely polarised   ammonia target.   This paper reports the Collins asymmetry of the proton extracted in the Bjorken X range   0.003-0.7.  Data are given for the 2010 data se over the full kinematic range as well as in restricted ranges.  Data are also given in the final tables for the full range using the combined 2007 (PL B692(2010),240) and  2010 data sets.  A second paper (CERN-PH-EP-2012-147, arXiv:1205.5122) reports the Sivers asymmetry and is linked below.   A link is also given to the correlation matrices between the three variables, X, Z and PT.
+dateupdated: 24/10/2012 00:00:00
+modifications:
+- {action: Encoded, date: 24 OCT 2012, who: Mike Whalley}
+record_ids:
+- {id: 1115720, type: inspire}
+- {id: 3543, type: red}
+
+---
+data_file: Table1.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of X for full range. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 3
+name: Table 1
+
+---
+data_file: Table2.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of X for full range. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 3
+name: Table 2
+
+---
+data_file: Table3.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of PT for full range. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 3
+name: Table 3
+
+---
+data_file: Table4.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of PT for full range. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 3
+name: Table 4
+
+---
+data_file: Table5.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of Z for full range. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 3
+name: Table 5
+
+---
+data_file: Table6.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of Z for full range. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 3
+name: Table 6
+
+---
+data_file: Table7.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of X for x > 0.032. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 4
+name: Table 7
+
+---
+data_file: Table8.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of X for x > 0.032. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 4
+name: Table 8
+
+---
+data_file: Table9.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of PT for x > 0.032. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 4
+name: Table 9
+
+---
+data_file: Table10.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of PT for x > 0.032. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 4
+name: Table 10
+
+---
+data_file: Table11.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of Z for x > 0.032. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 4
+name: Table 11
+
+---
+data_file: Table12.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of Z for x > 0.032. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 4
+name: Table 12
+
+---
+data_file: Table13.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of X for x > 0.032 and 0.05 < y < 0.10. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 13
+
+---
+data_file: Table14.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of X for x > 0.032 and 0.05 < y < 0.10. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 14
+
+---
+data_file: Table15.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of PT for x > 0.032 and 0.05 < y < 0.10. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 15
+
+---
+data_file: Table16.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of PT for x > 0.032 and 0.05 < y < 0.10. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 16
+
+---
+data_file: Table17.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of Z for x > 0.032 and 0.05 < y < 0.10. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 17
+
+---
+data_file: Table18.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of Z for x > 0.032 and 0.05 < y < 0.10. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 18
+
+---
+data_file: Table19.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of X for x > 0.032 and 0.10 < y < 0.20. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 19
+
+---
+data_file: Table20.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of X for x > 0.032 and 0.10 < y < 0.20. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 20
+
+---
+data_file: Table21.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of PT for x > 0.032 and 0.10 < y < 0.20. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 21
+
+---
+data_file: Table22.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of PT for x > 0.032 and 0.10 < y < 0.20. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 22
+
+---
+data_file: Table23.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of Z for x > 0.032 and 0.10 < y < 0.20. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 23
+
+---
+data_file: Table24.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of Z for x > 0.032 and 0.10 < y < 0.20. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 24
+
+---
+data_file: Table25.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of X for x > 0.032 and 0.20 < y < 0.90. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 25
+
+---
+data_file: Table26.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of X for x > 0.032 and 0.20 < y < 0.90. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 26
+
+---
+data_file: Table27.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of PT for x > 0.032 and 0.20 < y < 0.90. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 27
+
+---
+data_file: Table28.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of PT for x > 0.032 and 0.20 < y < 0.90. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 28
+
+---
+data_file: Table29.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of Z for x > 0.032 and 0.20 < y < 0.90. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 29
+
+---
+data_file: Table30.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of Z for x > 0.032 and 0.20 < y < 0.90. \nAlso shown are the mean\
+  \ values of other variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 5
+name: Table 30
+
+---
+data_file: Table31.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of X for 0.10 < z < 0.20. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 31
+
+---
+data_file: Table32.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of X for 0.10 < z < 0.20. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 32
+
+---
+data_file: Table33.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of PT for 0.10 < z < 0.20. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 33
+
+---
+data_file: Table34.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of PT for 0.10 < z < 0.20. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 34
+
+---
+data_file: Table35.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of Z for 0.10 < z < 0.20. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 35
+
+---
+data_file: Table36.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of Z for 0.10 < z < 0.20. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 36
+
+---
+data_file: Table37.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of X for 0.20 < z < 0.35. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 37
+
+---
+data_file: Table38.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of X for 0.20 < z < 0.35. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 38
+
+---
+data_file: Table39.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of PT for 0.20 < z < 0.35. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 39
+
+---
+data_file: Table40.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of PT for 0.20 < z < 0.35. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 40
+
+---
+data_file: Table41.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of Z for 0.20 < z < 0.35. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 41
+
+---
+data_file: Table42.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of Z for 0.20 < z < 0.35. \nAlso shown are the mean values of other\
+  \ variables plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 42
+
+---
+data_file: Table43.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of X for z > 0.35. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 43
+
+---
+data_file: Table44.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of X for z > 0.35. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 44
+
+---
+data_file: Table45.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of PT for z > 0.35. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 45
+
+---
+data_file: Table46.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of PT for z > 0.35. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 46
+
+---
+data_file: Table47.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for positive hadrons\
+  \ as a function of Z for z > 0.35. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 47
+
+---
+data_file: Table48.yaml
+description: "The Collins asymmetry, from the 2010 data set,  for negative hadrons\
+  \ as a function of Z for z > 0.35. \nAlso shown are the mean values of other variables\
+  \ plus the correlation with the Sivers data measurments.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 48
+
+---
+data_file: Table49.yaml
+description: "The Collins asymmetry, from the combined 2007 and 2010 data sets,  for\
+  \ positive hadrons as a function of X for 2007+2010 full range. \nAlso shown are\
+  \ the mean values of other variables.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 49
+
+---
+data_file: Table50.yaml
+description: "The Collins asymmetry, from the combined 2007 and 2010 data sets,  for\
+  \ negative hadrons as a function of X for 2007+2010 full range. \nAlso shown are\
+  \ the mean values of other variables.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 50
+
+---
+data_file: Table51.yaml
+description: "The Collins asymmetry, from the combined 2007 and 2010 data sets,  for\
+  \ positive hadrons as a function of PT for 2007+2010 full range. \nAlso shown are\
+  \ the mean values of other variables.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 51
+
+---
+data_file: Table52.yaml
+description: "The Collins asymmetry, from the combined 2007 and 2010 data sets,  for\
+  \ negative hadrons as a function of PT for 2007+2010 full range. \nAlso shown are\
+  \ the mean values of other variables.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 52
+
+---
+data_file: Table53.yaml
+description: "The Collins asymmetry, from the combined 2007 and 2010 data sets,  for\
+  \ positive hadrons as a function of Z for 2007+2010 full range. \nAlso shown are\
+  \ the mean values of other variables.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON+ X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 53
+
+---
+data_file: Table54.yaml
+description: "The Collins asymmetry, from the combined 2007 and 2010 data sets,  for\
+  \ negative hadrons as a function of Z for 2007+2010 full range. \nAlso shown are\
+  \ the mean values of other variables.\n"
+keywords:
+- name: reactions
+  values: [MU+ P --> HADRON- X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement]
+- name: cmenergies
+  values: [160.0]
+location: Data from F 0
+name: Table 54
+
