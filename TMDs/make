@@ -1,0 +1,4 @@
+	gfortran example.f DSSV.f
+	./a.out
+
+	rm -f a.out

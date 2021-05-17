@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     84630,       2291]
-NotebookOptionsPosition[     80117,       2132]
-NotebookOutlinePosition[     80454,       2147]
-CellTagsIndexPosition[     80411,       2144]
+NotebookDataLength[    123791,       3434]
+NotebookOptionsPosition[    116827,       3193]
+NotebookOutlinePosition[    117164,       3208]
+CellTagsIndexPosition[    117121,       3205]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2128,10 +2128,1071 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Collins Parameterization", "Title",
+ CellChangeTimes->{{3.8279537063325872`*^9, 3.82795371831641*^9}, {
+  3.828443741960875*^9, 3.828443742781557*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["DSS14 ", "Section",
+ CellChangeTimes->{{3.827953729043902*^9, 3.827953732485468*^9}, {
+  3.8284453486274643`*^9, 3.828445368702641*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Equation 1 of 1410.6027", "Subsection",
+ CellChangeTimes->{{3.8279537520788794`*^9, 3.827953786056013*^9}, {
+   3.827953870660924*^9, 3.827953884014906*^9}, {3.8279552248052197`*^9, 
+   3.827955226204886*^9}, 3.827967081481778*^9, {3.827967143184948*^9, 
+   3.827967159772983*^9}, 3.82844538961875*^9, {3.8284454204945717`*^9, 
+   3.828445420682811*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"DSSdp", "[", "z_", "]"}], " ", "=", " ", 
+   FractionBox[
+    RowBox[{"NdpDSS", " ", 
+     SuperscriptBox["z", "adpDSS"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "-", "z"}], ")"}], "\[Beta]dpDSS"], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"\[Gamma]dpDSS", " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "-", "z"}], ")"}], "\[Delta]dpDSS"]}]}], ")"}]}], 
+    RowBox[{
+     RowBox[{"Beta", "[", 
+      RowBox[{
+       RowBox[{"2", "+", "\[Alpha]dpDSS"}], ",", 
+       RowBox[{"\[Beta]dpDSS", "+", "1"}]}], "]"}], "+", 
+     RowBox[{"\[Gamma]dpDSS", " ", 
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        RowBox[{"2", "+", "\[Alpha]dpDSS"}], ",", 
+        RowBox[{"\[Beta]dpDSS", "+", "\[Delta]dpDSS", "+", "1"}]}], 
+       "]"}]}]}]]}], ";", 
+  RowBox[{
+   RowBox[{"DSSup", "[", "z_", "]"}], " ", "=", " ", 
+   FractionBox[
+    RowBox[{"NupDSS", " ", 
+     SuperscriptBox["z", "aupDSS"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "-", "z"}], ")"}], "\[Beta]upDSS"], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"\[Gamma]upDSS", " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "-", "z"}], ")"}], "\[Delta]upDSS"]}]}], ")"}]}], 
+    RowBox[{
+     RowBox[{"Beta", "[", 
+      RowBox[{
+       RowBox[{"2", "+", "\[Alpha]upDSS"}], ",", 
+       RowBox[{"\[Beta]upDSS", "+", "1"}]}], "]"}], "+", 
+     RowBox[{"\[Gamma]upDSS", " ", 
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        RowBox[{"2", "+", "\[Alpha]upDSS"}], ",", 
+        RowBox[{"\[Beta]upDSS", "+", "\[Delta]upDSS", "+", "1"}]}], 
+       "]"}]}]}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"DSSsp", "[", "z_", "]"}], " ", "=", " ", 
+   FractionBox[
+    RowBox[{"NssDSS", " ", 
+     SuperscriptBox["z", "assDSS"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "-", "z"}], ")"}], "\[Beta]ssDSS"], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"\[Gamma]ssDSS", " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "-", "z"}], ")"}], "\[Delta]ssDSS"]}]}], ")"}]}], 
+    RowBox[{
+     RowBox[{"Beta", "[", 
+      RowBox[{
+       RowBox[{"2", "+", "\[Alpha]ssDSS"}], ",", 
+       RowBox[{"\[Beta]ssDSS", "+", "1"}]}], "]"}], "+", 
+     RowBox[{"\[Gamma]ssDSS", " ", 
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        RowBox[{"2", "+", "\[Alpha]ssDSS"}], ",", 
+        RowBox[{"\[Beta]ssDSS", "+", "\[Delta]ssDSS", "+", "1"}]}], 
+       "]"}]}]}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"DSSub", "[", "z_", "]"}], " ", "=", " ", 
+   FractionBox[
+    RowBox[{"NubDSS", " ", 
+     SuperscriptBox["z", "aubDSS"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "-", "z"}], ")"}], "\[Beta]ubDSS"], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"\[Gamma]ubDSS", " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "-", "z"}], ")"}], "\[Delta]ubDSS"]}]}], ")"}]}], 
+    RowBox[{
+     RowBox[{"Beta", "[", 
+      RowBox[{
+       RowBox[{"2", "+", "\[Alpha]ubDSS"}], ",", 
+       RowBox[{"\[Beta]ubDSS", "+", "1"}]}], "]"}], "+", 
+     RowBox[{"\[Gamma]ubDSS", " ", 
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        RowBox[{"2", "+", "\[Alpha]ubDSS"}], ",", 
+        RowBox[{"\[Beta]ubDSS", "+", "\[Delta]ubDSS", "+", "1"}]}], 
+       "]"}]}]}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"DSSdd", "[", "z_", "]"}], " ", "=", " ", 
+   FractionBox[
+    RowBox[{"NddDSS", " ", 
+     SuperscriptBox["z", "addDSS"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "-", "z"}], ")"}], "\[Beta]ddDSS"], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"\[Gamma]ddDSS", " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "-", "z"}], ")"}], "\[Delta]ddDSS"]}]}], ")"}]}], 
+    RowBox[{
+     RowBox[{"Beta", "[", 
+      RowBox[{
+       RowBox[{"2", "+", "\[Alpha]ddDSS"}], ",", 
+       RowBox[{"\[Beta]ddDSS", "+", "1"}]}], "]"}], "+", 
+     RowBox[{"\[Gamma]ddDSS", " ", 
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        RowBox[{"2", "+", "\[Alpha]ddDSS"}], ",", 
+        RowBox[{"\[Beta]ddDSS", "+", "\[Delta]ddDSS", "+", "1"}]}], 
+       "]"}]}]}]]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.8284437530618343`*^9, 3.828443754553994*^9}, {
+   3.8284438430000353`*^9, 3.8284440630533533`*^9}, {3.828444850857229*^9, 
+   3.828444918182393*^9}, {3.8302622366181107`*^9, 3.830262237540613*^9}, 
+   3.8302622971968803`*^9, {3.83026235759237*^9, 3.8302623671215982`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"solns", " ", "=", " ", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"Solve", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"DSSdp", "[", "z", "]"}], " ", "\[Equal]", " ", 
+         RowBox[{
+          RowBox[{"DSSdd", "[", "z", "]"}], "+", "DSSdbp"}]}], ",", 
+        RowBox[{
+         RowBox[{"DSSup", "[", "z", "]"}], " ", "\[Equal]", " ", 
+         RowBox[{"DSSuup", "+", 
+          RowBox[{"DSSub", "[", "z", "]"}]}]}], ",", 
+        RowBox[{
+         RowBox[{"DSSsp", "[", "z", "]"}], " ", "\[Equal]", " ", 
+         RowBox[{"DSSssp", "+", "DSSsbp"}]}], ",", 
+        RowBox[{"DSSsbp", " ", "\[Equal]", " ", "DSSssp"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"DSSdbp", ",", "DSSuup", ",", "DSSssp", ",", "DSSsbp"}], 
+       "}"}]}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"DSSsb", "[", "z_", "]"}], " ", "=", " ", 
+   RowBox[{"DSSsbp", "/.", 
+    RowBox[{"solns", "[", 
+     RowBox[{"[", "1", "]"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"DSSss", "[", "z_", "]"}], " ", "=", " ", 
+   RowBox[{"DSSssp", "/.", 
+    RowBox[{"solns", "[", 
+     RowBox[{"[", "1", "]"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"DSSuu", "[", "z_", "]"}], " ", "=", " ", 
+   RowBox[{"DSSuup", "/.", 
+    RowBox[{"solns", "[", 
+     RowBox[{"[", "1", "]"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"DSSdb", "[", "z_", "]"}], " ", "=", " ", 
+   RowBox[{"DSSdbp", "/.", 
+    RowBox[{"solns", "[", 
+     RowBox[{"[", "1", "]"}], "]"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.830262376088496*^9, 3.830262401444167*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.830268297629047*^9, 3.8302683158302937`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FractionBox[
+    RowBox[{"NubDSS", " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "-", "z"}], ")"}], "\[Beta]ubDSS"], " ", 
+     SuperscriptBox["z", "aubDSS"], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "-", "z"}], ")"}], "\[Delta]ubDSS"], " ", 
+        "\[Gamma]ubDSS"}]}], ")"}]}], 
+    RowBox[{
+     RowBox[{"Beta", "[", 
+      RowBox[{
+       RowBox[{"2", "+", "\[Alpha]ubDSS"}], ",", 
+       RowBox[{"1", "+", "\[Beta]ubDSS"}]}], "]"}], "+", 
+     RowBox[{"\[Gamma]ubDSS", " ", 
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        RowBox[{"2", "+", "\[Alpha]ubDSS"}], ",", 
+        RowBox[{"1", "+", "\[Beta]ubDSS", "+", "\[Delta]ubDSS"}]}], 
+       "]"}]}]}]]}], "+", 
+  FractionBox[
+   RowBox[{"NupDSS", " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "-", "z"}], ")"}], "\[Beta]upDSS"], " ", 
+    SuperscriptBox["z", "aupDSS"], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"1", "-", "z"}], ")"}], "\[Delta]upDSS"], " ", 
+       "\[Gamma]upDSS"}]}], ")"}]}], 
+   RowBox[{
+    RowBox[{"Beta", "[", 
+     RowBox[{
+      RowBox[{"2", "+", "\[Alpha]upDSS"}], ",", 
+      RowBox[{"1", "+", "\[Beta]upDSS"}]}], "]"}], "+", 
+    RowBox[{"\[Gamma]upDSS", " ", 
+     RowBox[{"Beta", "[", 
+      RowBox[{
+       RowBox[{"2", "+", "\[Alpha]upDSS"}], ",", 
+       RowBox[{"1", "+", "\[Beta]upDSS", "+", "\[Delta]upDSS"}]}], 
+      "]"}]}]}]]}]], "Output",
+ CellChangeTimes->{3.8302683005090027`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["KPSY 2015 ", "Section",
+ CellChangeTimes->{{3.827953729043902*^9, 3.827953732485468*^9}, {
+  3.8284453486274643`*^9, 3.828445368702641*^9}, {3.8284454479772778`*^9, 
+  3.828445453925864*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Equations 111 and 112 of 1505.05589", "Subsection",
+ CellChangeTimes->{{3.8279537520788794`*^9, 3.827953786056013*^9}, {
+   3.827953870660924*^9, 3.827953884014906*^9}, {3.8279552248052197`*^9, 
+   3.827955226204886*^9}, 3.827967081481778*^9, {3.827967143184948*^9, 
+   3.827967159772983*^9}, {3.82844538961875*^9, 3.828445432563785*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"CDKTColuu", "[", "z_", "]"}], " ", "=", " ", 
+   RowBox[{"Nfav", " ", 
+    SuperscriptBox["z", "\[Alpha]fav"], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "-", "z"}], ")"}], "\[Beta]fav"], 
+    RowBox[{"DSSuu", "[", "z", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"CDKTColdb", "[", "z_", "]"}], " ", "=", " ", 
+   RowBox[{"Nfav", " ", 
+    SuperscriptBox["z", "\[Alpha]fav"], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "-", "z"}], ")"}], "\[Beta]fav"], 
+    RowBox[{"DSSdb", "[", "z", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"CDKTColub", "[", "z_", "]"}], " ", "=", " ", 
+   RowBox[{"Nufv", " ", 
+    SuperscriptBox["z", "\[Alpha]ufv"], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "-", "z"}], ")"}], "\[Beta]ufv"], 
+    RowBox[{"DSSub", "[", "z", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"CDKTColdd", "[", "z_", "]"}], " ", "=", " ", 
+   RowBox[{"Nufv", " ", 
+    SuperscriptBox["z", "\[Alpha]ufv"], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "-", "z"}], ")"}], "\[Beta]ufv"], 
+    RowBox[{"DSSdd", "[", "z", "]"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.828444327515798*^9, 3.828444444831559*^9}, 
+   3.830262353453082*^9, {3.830262416868969*^9, 3.830262429998067*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"assumps", " ", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"assumps1", "=", 
+    RowBox[{"{", "}"}]}], ";"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"assumps1", ",", 
+    RowBox[{
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["z", 
+         RowBox[{"n", "-", "1"}]], 
+        RowBox[{"CDKTColdd", "[", "z", "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"z", ",", "0", ",", "1"}], "}"}]}], "]"}], "[", 
+     RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"assumps", ",", "assumps1"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"MellCDKTColldd", "[", "n_", "]"}], " ", "=", " ", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["z", 
+       RowBox[{"n", "-", "1"}]], 
+      RowBox[{"CDKTColdd", "[", "z", "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", "0", ",", "1"}], "}"}], ",", " ", 
+     RowBox[{"Assumptions", "\[Rule]", "assumps1"}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{3.828448286148724*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"assumps1", "=", 
+    RowBox[{"{", "}"}]}], ";"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"assumps1", ",", 
+    RowBox[{
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["z", 
+         RowBox[{"n", "-", "1"}]], 
+        RowBox[{"CDKTColub", "[", "z", "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"z", ",", "0", ",", "1"}], "}"}]}], "]"}], "[", 
+     RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"assumps", ",", "assumps1"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"MellCDKTCollub", "[", "n_", "]"}], " ", "=", " ", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["z", 
+       RowBox[{"n", "-", "1"}]], 
+      RowBox[{"CDKTColub", "[", "z", "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", "0", ",", "1"}], "}"}], ",", " ", 
+     RowBox[{"Assumptions", "\[Rule]", "assumps1"}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{3.8284482878409147`*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"assumps1", "=", 
+    RowBox[{"{", "}"}]}], ";"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"assumps1", ",", 
+    RowBox[{
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["z", 
+         RowBox[{"n", "-", "1"}]], 
+        RowBox[{"CDKTColdb", "[", "z", "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"z", ",", "0", ",", "1"}], "}"}]}], "]"}], "[", 
+     RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"assumps", ",", "assumps1"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"MellCDKTColldb", "[", "n_", "]"}], " ", "=", " ", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["z", 
+       RowBox[{"n", "-", "1"}]], 
+      RowBox[{"CDKTColdb", "[", "z", "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", "0", ",", "1"}], "}"}], ",", " ", 
+     RowBox[{"Assumptions", "\[Rule]", "assumps1"}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{3.828448289518882*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"assumps1", "=", 
+    RowBox[{"{", "}"}]}], ";"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"assumps1", ",", 
+    RowBox[{
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["z", 
+         RowBox[{"n", "-", "1"}]], 
+        RowBox[{"CDKTColuu", "[", "z", "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"z", ",", "0", ",", "1"}], "}"}]}], "]"}], "[", 
+     RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"assumps", ",", "assumps1"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"MellCDKTColluu", "[", "n_", "]"}], " ", "=", " ", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["z", 
+       RowBox[{"n", "-", "1"}]], 
+      RowBox[{"CDKTColuu", "[", "z", "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", "0", ",", "1"}], "}"}], ",", " ", 
+     RowBox[{"Assumptions", "\[Rule]", "assumps1"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"assumps", " ", "=", " ", 
+  RowBox[{"Reduce", "[", "assumps", "]"}]}]}], "Input",
+ CellChangeTimes->{3.828448296863739*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Reduce", "::", "naqs"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", RowBox[{\\\"\[Beta]ddDSS\\\", \
+\\\"+\\\", \\\"\[Beta]ufv\\\"}], \\\"]\\\"}], \\\">\\\", RowBox[{\\\"-\\\", \
+\\\"1\\\"}]}], \\\"&&\\\", RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", \
+RowBox[{\\\"\[Beta]ddDSS\\\", \\\"+\\\", \\\"\[Beta]ufv\\\", \\\"+\\\", \\\"\
+\[Delta]ddDSS\\\"}], \\\"]\\\"}], \\\">\\\", RowBox[{\\\"-\\\", \
+\\\"1\\\"}]}], \\\"&&\\\", RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", \
+RowBox[{\\\"addDSS\\\", \\\"+\\\", \\\"n\\\", \\\"+\\\", \
+\\\"\[Alpha]ufv\\\"}], \\\"]\\\"}], \\\">\\\", \\\"0\\\"}]}], \\\"}\\\"}], \\\
+\"&&\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", \
+RowBox[{\\\"\[Beta]fav\\\", \\\"+\\\", \\\"\[Beta]ubDSS\\\"}], \\\"]\\\"}], \
+\\\">\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], \\\"&&\\\", \
+RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", RowBox[{\\\"\[Beta]fav\\\", \\\"+\\\", \
+\\\"\[Beta]upDSS\\\"}], \\\"]\\\"}], \\\">\\\", RowBox[{\\\"-\\\", \
+\\\"1\\\"}]}], \\\"&&\\\", RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", \
+\\\"\[Beta]fav\\\", \\\"]\\\"}], \\\">\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], \
+\\\"&&\\\", RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", \
+RowBox[{\\\"\[Beta]fav\\\", \\\"+\\\", \\\"\[Beta]ubDSS\\\", \\\"+\\\", \\\"\
+\[Delta]ubDSS\\\"}], \\\"]\\\"}], \\\">\\\", RowBox[{\\\"-\\\", \
+\\\"1\\\"}]}], \\\"&&\\\", RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", \
+RowBox[{\\\"aupDSS\\\", \\\"+\\\", \\\"n\\\", \\\"+\\\", \
+\\\"\[Alpha]fav\\\"}], \\\"]\\\"}], \\\">\\\", \\\"0\\\"}], \\\"&&\\\", \
+RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", RowBox[{\\\"\[Beta]fav\\\", \\\"+\\\", \
+\\\"\[Beta]upDSS\\\", \\\"+\\\", \\\"\[Delta]upDSS\\\"}], \\\"]\\\"}], \
+\\\">\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], \\\"&&\\\", \
+RowBox[{RowBox[{\\\"Re\\\", \\\"[\\\", RowBox[{\\\"aubDSS\\\", \\\"+\\\", \
+\\\"n\\\", \\\"+\\\", \\\"\[Alpha]fav\\\"}], \\\"]\\\"}], \\\">\\\", \
+\\\"0\\\"}]}], \\\"}\\\"}]}]\\)\[NoBreak] is not a quantified system of \
+equations and inequalities. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Reduce/naqs\\\", ButtonNote -> \
+\\\"Reduce::naqs\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.830263927714073*^9, 3.830264879920162*^9}],
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Re", "[", 
+        RowBox[{"\[Beta]ddDSS", "+", "\[Beta]ufv"}], "]"}], ">", 
+       RowBox[{"-", "1"}]}], "&&", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        RowBox[{"\[Beta]ddDSS", "+", "\[Beta]ufv", "+", "\[Delta]ddDSS"}], 
+        "]"}], ">", 
+       RowBox[{"-", "1"}]}], "&&", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        RowBox[{"addDSS", "+", "n", "+", "\[Alpha]ufv"}], "]"}], ">", "0"}]}],
+      "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Re", "[", 
+        RowBox[{"\[Beta]fav", "+", "\[Beta]ubDSS"}], "]"}], ">", 
+       RowBox[{"-", "1"}]}], "&&", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        RowBox[{"\[Beta]fav", "+", "\[Beta]upDSS"}], "]"}], ">", 
+       RowBox[{"-", "1"}]}], "&&", 
+      RowBox[{
+       RowBox[{"Re", "[", "\[Beta]fav", "]"}], ">", 
+       RowBox[{"-", "1"}]}], "&&", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        RowBox[{"\[Beta]fav", "+", "\[Beta]ubDSS", "+", "\[Delta]ubDSS"}], 
+        "]"}], ">", 
+       RowBox[{"-", "1"}]}], "&&", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        RowBox[{"aupDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], ">", "0"}], "&&", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        RowBox[{"\[Beta]fav", "+", "\[Beta]upDSS", "+", "\[Delta]upDSS"}], 
+        "]"}], ">", 
+       RowBox[{"-", "1"}]}], "&&", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        RowBox[{"aubDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], ">", "0"}]}],
+      "}"}]}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{3.830263927715208*^9, 3.830264879922427*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"assumpsnew", " ", "=", " ", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"\[Beta]ddDSS", "+", "\[Beta]ufv"}], "]"}], ">", 
+         RowBox[{"-", "1"}]}], "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"\[Beta]ddDSS", "+", "\[Beta]ufv", "+", "\[Delta]ddDSS"}], 
+          "]"}], ">", 
+         RowBox[{"-", "1"}]}], "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"addDSS", "+", "n", "+", "\[Alpha]ufv"}], "]"}], ">", 
+         "0"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"\[Beta]fav", "+", "\[Beta]ubDSS"}], "]"}], ">", 
+         RowBox[{"-", "1"}]}], "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"\[Beta]fav", "+", "\[Beta]upDSS"}], "]"}], ">", 
+         RowBox[{"-", "1"}]}], "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", "\[Beta]fav", "]"}], ">", 
+         RowBox[{"-", "1"}]}], "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"\[Beta]fav", "+", "\[Beta]ubDSS", "+", "\[Delta]ubDSS"}], 
+          "]"}], ">", 
+         RowBox[{"-", "1"}]}], "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"aupDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], ">", "0"}],
+         "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"\[Beta]fav", "+", "\[Beta]upDSS", "+", "\[Delta]upDSS"}], 
+          "]"}], ">", 
+         RowBox[{"-", "1"}]}], "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", 
+          RowBox[{"aubDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], ">", 
+         "0"}]}], "}"}]}], "}"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.830265748528157*^9, 3.83026580516969*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", "assumpsnew", "]"}]], "Input",
+ CellChangeTimes->{{3.83026580702101*^9, 3.830265814031314*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{"\[Beta]ddDSS", "+", "\[Beta]ufv"}], "]"}], ">", 
+   RowBox[{"-", "1"}]}], "&&", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{"\[Beta]fav", "+", "\[Beta]ubDSS"}], "]"}], ">", 
+   RowBox[{"-", "1"}]}], "&&", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{"\[Beta]fav", "+", "\[Beta]upDSS"}], "]"}], ">", 
+   RowBox[{"-", "1"}]}], "&&", 
+  RowBox[{
+   RowBox[{"Re", "[", "\[Beta]fav", "]"}], ">", 
+   RowBox[{"-", "1"}]}], "&&", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{"\[Beta]ddDSS", "+", "\[Beta]ufv", "+", "\[Delta]ddDSS"}], "]"}], 
+   ">", 
+   RowBox[{"-", "1"}]}], "&&", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{"addDSS", "+", "n", "+", "\[Alpha]ufv"}], "]"}], ">", "0"}], "&&", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{"\[Beta]fav", "+", "\[Beta]ubDSS", "+", "\[Delta]ubDSS"}], "]"}], 
+   ">", 
+   RowBox[{"-", "1"}]}], "&&", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{"aupDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], ">", "0"}], "&&", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{"\[Beta]fav", "+", "\[Beta]upDSS", "+", "\[Delta]upDSS"}], "]"}], 
+   ">", 
+   RowBox[{"-", "1"}]}], "&&", 
+  RowBox[{
+   RowBox[{"Re", "[", 
+    RowBox[{"aubDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], ">", 
+   "0"}]}]], "Output",
+ CellChangeTimes->{{3.830265808733583*^9, 3.830265814435738*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["assumps1"], "Input",
+ CellChangeTimes->{{3.830265739818205*^9, 3.830265741729629*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Re", "[", 
+     RowBox[{"\[Beta]fav", "+", "\[Beta]ubDSS"}], "]"}], ">", 
+    RowBox[{"-", "1"}]}], "&&", 
+   RowBox[{
+    RowBox[{"Re", "[", 
+     RowBox[{"\[Beta]fav", "+", "\[Beta]upDSS"}], "]"}], ">", 
+    RowBox[{"-", "1"}]}], "&&", 
+   RowBox[{
+    RowBox[{"Re", "[", "\[Beta]fav", "]"}], ">", 
+    RowBox[{"-", "1"}]}], "&&", 
+   RowBox[{
+    RowBox[{"Re", "[", 
+     RowBox[{"\[Beta]fav", "+", "\[Beta]ubDSS", "+", "\[Delta]ubDSS"}], "]"}],
+     ">", 
+    RowBox[{"-", "1"}]}], "&&", 
+   RowBox[{
+    RowBox[{"Re", "[", 
+     RowBox[{"aupDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], ">", "0"}], "&&", 
+   RowBox[{
+    RowBox[{"Re", "[", 
+     RowBox[{"\[Beta]fav", "+", "\[Beta]upDSS", "+", "\[Delta]upDSS"}], "]"}],
+     ">", 
+    RowBox[{"-", "1"}]}], "&&", 
+   RowBox[{
+    RowBox[{"Re", "[", 
+     RowBox[{"aubDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], ">", "0"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.830265742088477*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CDKTColuu", "[", "z", "]"}]], "Input",
+ CellChangeTimes->{{3.8302639387159653`*^9, 3.830263943068755*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Nfav", " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"1", "-", "z"}], ")"}], "\[Beta]fav"], " ", 
+  SuperscriptBox["z", "\[Alpha]fav"], " ", 
+  RowBox[{"DSSuu", "[", "z", "]"}]}]], "Output",
+ CellChangeTimes->{3.8302639433602457`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MellCDKTColluu", "[", "n", "]"}]], "Input",
+ CellChangeTimes->{3.8302638174875517`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Nfav", " ", 
+  RowBox[{"Gamma", "[", 
+   RowBox[{"1", "+", "\[Beta]fav"}], "]"}], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"NubDSS", " ", 
+         RowBox[{"Gamma", "[", 
+          RowBox[{"aubDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Hypergeometric2F1", "[", 
+            RowBox[{
+             RowBox[{"aubDSS", "+", "n", "+", "\[Alpha]fav"}], ",", 
+             RowBox[{"-", "\[Beta]ubDSS"}], ",", 
+             RowBox[{
+             "1", "+", "aubDSS", "+", "n", "+", "\[Alpha]fav", "+", 
+              "\[Beta]fav"}], ",", "1"}], "]"}], "+", 
+           RowBox[{"\[Gamma]ubDSS", " ", 
+            RowBox[{"Hypergeometric2F1", "[", 
+             RowBox[{
+              RowBox[{"aubDSS", "+", "n", "+", "\[Alpha]fav"}], ",", 
+              RowBox[{
+               RowBox[{"-", "\[Beta]ubDSS"}], "-", "\[Delta]ubDSS"}], ",", 
+              RowBox[{
+              "1", "+", "aubDSS", "+", "n", "+", "\[Alpha]fav", "+", 
+               "\[Beta]fav"}], ",", "1"}], "]"}]}]}], ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Beta", "[", 
+            RowBox[{
+             RowBox[{"2", "+", "\[Alpha]ubDSS"}], ",", 
+             RowBox[{"1", "+", "\[Beta]ubDSS"}]}], "]"}], "+", 
+           RowBox[{"\[Gamma]ubDSS", " ", 
+            RowBox[{"Beta", "[", 
+             RowBox[{
+              RowBox[{"2", "+", "\[Alpha]ubDSS"}], ",", 
+              RowBox[{"1", "+", "\[Beta]ubDSS", "+", "\[Delta]ubDSS"}]}], 
+             "]"}]}]}], ")"}], " ", 
+         RowBox[{"Gamma", "[", 
+          RowBox[{
+          "1", "+", "aubDSS", "+", "n", "+", "\[Alpha]fav", "+", 
+           "\[Beta]fav"}], "]"}]}], ")"}]}], ")"}]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"NupDSS", " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{"aupDSS", "+", "n", "+", "\[Alpha]fav"}], "]"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Hypergeometric2F1", "[", 
+          RowBox[{
+           RowBox[{"aupDSS", "+", "n", "+", "\[Alpha]fav"}], ",", 
+           RowBox[{"-", "\[Beta]upDSS"}], ",", 
+           RowBox[{
+           "1", "+", "aupDSS", "+", "n", "+", "\[Alpha]fav", "+", 
+            "\[Beta]fav"}], ",", "1"}], "]"}], "+", 
+         RowBox[{"\[Gamma]upDSS", " ", 
+          RowBox[{"Hypergeometric2F1", "[", 
+           RowBox[{
+            RowBox[{"aupDSS", "+", "n", "+", "\[Alpha]fav"}], ",", 
+            RowBox[{
+             RowBox[{"-", "\[Beta]upDSS"}], "-", "\[Delta]upDSS"}], ",", 
+            RowBox[{
+            "1", "+", "aupDSS", "+", "n", "+", "\[Alpha]fav", "+", 
+             "\[Beta]fav"}], ",", "1"}], "]"}]}]}], ")"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Beta", "[", 
+          RowBox[{
+           RowBox[{"2", "+", "\[Alpha]upDSS"}], ",", 
+           RowBox[{"1", "+", "\[Beta]upDSS"}]}], "]"}], "+", 
+         RowBox[{"\[Gamma]upDSS", " ", 
+          RowBox[{"Beta", "[", 
+           RowBox[{
+            RowBox[{"2", "+", "\[Alpha]upDSS"}], ",", 
+            RowBox[{"1", "+", "\[Beta]upDSS", "+", "\[Delta]upDSS"}]}], 
+           "]"}]}]}], ")"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{
+        "1", "+", "aupDSS", "+", "n", "+", "\[Alpha]fav", "+", "\[Beta]fav"}],
+         "]"}]}], ")"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.830265718111474*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MellCDKTColldd", "[", "n", "]"}]], "Input",
+ CellChangeTimes->{{3.830263825359418*^9, 3.830263825832417*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"NddDSS", " ", "Nufv", " ", 
+    RowBox[{"Gamma", "[", 
+     RowBox[{"addDSS", "+", "n", "+", "\[Alpha]ufv"}], "]"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"\[Gamma]ddDSS", " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{
+        "1", "+", "addDSS", "+", "n", "+", "\[Alpha]ufv", "+", "\[Beta]ddDSS",
+          "+", "\[Beta]ufv"}], "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{
+        "1", "+", "\[Beta]ddDSS", "+", "\[Beta]ufv", "+", "\[Delta]ddDSS"}], 
+        "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"Gamma", "[", 
+        RowBox[{"1", "+", "\[Beta]ddDSS", "+", "\[Beta]ufv"}], "]"}], " ", 
+       RowBox[{"Gamma", "[", 
+        RowBox[{
+        "1", "+", "addDSS", "+", "n", "+", "\[Alpha]ufv", "+", "\[Beta]ddDSS",
+          "+", "\[Beta]ufv", "+", "\[Delta]ddDSS"}], "]"}]}]}], ")"}]}], 
+   ")"}], "/", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        RowBox[{"2", "+", "\[Alpha]ddDSS"}], ",", 
+        RowBox[{"1", "+", "\[Beta]ddDSS"}]}], "]"}], "+", 
+      RowBox[{"\[Gamma]ddDSS", " ", 
+       RowBox[{"Beta", "[", 
+        RowBox[{
+         RowBox[{"2", "+", "\[Alpha]ddDSS"}], ",", 
+         RowBox[{"1", "+", "\[Beta]ddDSS", "+", "\[Delta]ddDSS"}]}], 
+        "]"}]}]}], ")"}], " ", 
+    RowBox[{"Gamma", "[", 
+     RowBox[{
+     "1", "+", "addDSS", "+", "n", "+", "\[Alpha]ufv", "+", "\[Beta]ddDSS", 
+      "+", "\[Beta]ufv"}], "]"}], " ", 
+    RowBox[{"Gamma", "[", 
+     RowBox[{
+     "1", "+", "addDSS", "+", "n", "+", "\[Alpha]ufv", "+", "\[Beta]ddDSS", 
+      "+", "\[Beta]ufv", "+", "\[Delta]ddDSS"}], "]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.83026572591969*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["To Fortran, then to Python ;)", "Subsection",
+ CellChangeTimes->{{3.8279537520788794`*^9, 3.827953786056013*^9}, {
+  3.827953971908876*^9, 3.827953979802718*^9}, {3.827955055367319*^9, 
+  3.8279550583445683`*^9}, {3.827955211400756*^9, 3.827955214341517*^9}, {
+  3.8279630585413723`*^9, 3.8279630707477903`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FortranForm", "[", 
+  RowBox[{"MellCDKTColluu", "[", "n", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.827960636444084*^9, 3.827960641338958*^9}, {
+   3.830263810768221*^9, 3.830263837323971*^9}, 3.830265825835352*^9}],
+
+Cell["\<\
+        Nfav*Gamma(1 + \[Beta]fav)*(-((NubDSS*Gamma(aubDSS + n + \
+\[Alpha]fav)*(Hypergeometric2F1(aubDSS + n + \[Alpha]fav,-\[Beta]ubDSS,1 + \
+aubDSS + n + \[Alpha]fav + \[Beta]fav,1) + 
+     -           \[Gamma]ubDSS*Hypergeometric2F1(aubDSS + n + \[Alpha]fav,-\
+\[Beta]ubDSS - \[Delta]ubDSS,1 + aubDSS + n + \[Alpha]fav + \[Beta]fav,1)))/
+     -       ((Beta(2 + \[Alpha]ubDSS,1 + \[Beta]ubDSS) + \
+\[Gamma]ubDSS*Beta(2 + \[Alpha]ubDSS,1 + \[Beta]ubDSS + \
+\[Delta]ubDSS))*Gamma(1 + aubDSS + n + \[Alpha]fav + \[Beta]fav))) + 
+     -    (NupDSS*Gamma(aupDSS + n + \[Alpha]fav)*(Hypergeometric2F1(aupDSS + \
+n + \[Alpha]fav,-\[Beta]upDSS,1 + aupDSS + n + \[Alpha]fav + \[Beta]fav,1) + 
+     -         \[Gamma]upDSS*Hypergeometric2F1(aupDSS + n + \[Alpha]fav,-\
+\[Beta]upDSS - \[Delta]upDSS,1 + aupDSS + n + \[Alpha]fav + \[Beta]fav,1)))/
+     -     ((Beta(2 + \[Alpha]upDSS,1 + \[Beta]upDSS) + \[Gamma]upDSS*Beta(2 \
++ \[Alpha]upDSS,1 + \[Beta]upDSS + \[Delta]upDSS))*Gamma(1 + aupDSS + n + \
+\[Alpha]fav + \[Beta]fav)))\
+\>", "Output",
+ CellChangeTimes->{{3.8279606337018757`*^9, 3.8279606417651*^9}, 
+   3.827961877850808*^9, 3.830265826570373*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FortranForm", "[", 
+  RowBox[{"MellCDKTColldd", "[", "n", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8302658343636217`*^9, 3.830265834753069*^9}}],
+
+Cell["\<\
+        (NddDSS*Nufv*Gamma(addDSS + n + \[Alpha]ufv)*(\[Gamma]ddDSS*Gamma(1 + \
+addDSS + n + \[Alpha]ufv + \[Beta]ddDSS + \[Beta]ufv)*Gamma(1 + \[Beta]ddDSS \
++ \[Beta]ufv + \[Delta]ddDSS) + 
+     -      Gamma(1 + \[Beta]ddDSS + \[Beta]ufv)*Gamma(1 + addDSS + n + \
+\[Alpha]ufv + \[Beta]ddDSS + \[Beta]ufv + \[Delta]ddDSS)))/
+     -  ((Beta(2 + \[Alpha]ddDSS,1 + \[Beta]ddDSS) + \[Gamma]ddDSS*Beta(2 + \
+\[Alpha]ddDSS,1 + \[Beta]ddDSS + \[Delta]ddDSS))*Gamma(1 + addDSS + n + \
+\[Alpha]ufv + \[Beta]ddDSS + \[Beta]ufv)*Gamma(1 + addDSS + n + \[Alpha]ufv + \
+\[Beta]ddDSS + \[Beta]ufv + \[Delta]ddDSS))\
+\>", "Output",
+ CellChangeTimes->{3.830265835063694*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FortranForm", "[", 
+  RowBox[{"DSSuu", "[", "z", "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.830268320327038*^9}],
+
+Cell["\<\
+        -((NubDSS*(1 - z)**\[Beta]ubDSS*z**aubDSS*(1 + (1 - \
+z)**\[Delta]ubDSS*\[Gamma]ubDSS))/
+     -     (Beta(2 + \[Alpha]ubDSS,1 + \[Beta]ubDSS) + \[Gamma]ubDSS*Beta(2 + \
+\[Alpha]ubDSS,1 + \[Beta]ubDSS + \[Delta]ubDSS))
+     -     ) + (NupDSS*(1 - z)**\[Beta]upDSS*z**aupDSS*(1 + (1 - \
+z)**\[Delta]upDSS*\[Gamma]upDSS))/
+     -   (Beta(2 + \[Alpha]upDSS,1 + \[Beta]upDSS) + \[Gamma]upDSS*Beta(2 + \
+\[Alpha]upDSS,1 + \[Beta]upDSS + \[Delta]upDSS))\
+\>", "Output",
+ CellChangeTimes->{3.8302683207474623`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FortranForm", "[", 
+  RowBox[{"DSSub", "[", "z", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8302686981278563`*^9, 3.830268698474082*^9}}],
+
+Cell["\<\
+        (NubDSS*(1 - z)**\[Beta]ubDSS*z**aubDSS*(1 + (1 - z)**\[Delta]ubDSS*\
+\[Gamma]ubDSS))/
+     -  (Beta(2 + \[Alpha]ubDSS,1 + \[Beta]ubDSS) + \[Gamma]ubDSS*Beta(2 + \
+\[Alpha]ubDSS,1 + \[Beta]ubDSS + \[Delta]ubDSS))\
+\>", "Output",
+ CellChangeTimes->{3.830268698791787*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSSub", "[", "z", "]"}]], "Input",
+ CellChangeTimes->{{3.83026934634912*^9, 3.830269347129188*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"NubDSS", " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "-", "z"}], ")"}], "\[Beta]ubDSS"], " ", 
+   SuperscriptBox["z", "aubDSS"], " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "-", "z"}], ")"}], "\[Delta]ubDSS"], " ", 
+      "\[Gamma]ubDSS"}]}], ")"}]}], 
+  RowBox[{
+   RowBox[{"Beta", "[", 
+    RowBox[{
+     RowBox[{"2", "+", "\[Alpha]ubDSS"}], ",", 
+     RowBox[{"1", "+", "\[Beta]ubDSS"}]}], "]"}], "+", 
+   RowBox[{"\[Gamma]ubDSS", " ", 
+    RowBox[{"Beta", "[", 
+     RowBox[{
+      RowBox[{"2", "+", "\[Alpha]ubDSS"}], ",", 
+      RowBox[{"1", "+", "\[Beta]ubDSS", "+", "\[Delta]ubDSS"}]}], 
+     "]"}]}]}]]], "Output",
+ CellChangeTimes->{3.830269347438923*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FortranForm", "[", 
+  RowBox[{"DSSuu", "[", "z", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.830271374759358*^9, 3.8302713857863407`*^9}}],
+
+Cell["\<\
+        -((NubDSS*(1 - z)**\[Beta]ubDSS*z**aubDSS*(1 + (1 - \
+z)**\[Delta]ubDSS*\[Gamma]ubDSS))/
+     -     (Beta(2 + \[Alpha]ubDSS,1 + \[Beta]ubDSS) + \[Gamma]ubDSS*Beta(2 + \
+\[Alpha]ubDSS,1 + \[Beta]ubDSS + \[Delta]ubDSS))
+     -     ) + (NupDSS*(1 - z)**\[Beta]upDSS*z**aupDSS*(1 + (1 - \
+z)**\[Delta]upDSS*\[Gamma]upDSS))/
+     -   (Beta(2 + \[Alpha]upDSS,1 + \[Beta]upDSS) + \[Gamma]upDSS*Beta(2 + \
+\[Alpha]upDSS,1 + \[Beta]upDSS + \[Delta]upDSS))\
+\>", "Output",
+ CellChangeTimes->{{3.830271375747427*^9, 3.830271386147846*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     SuperscriptBox["z", "n"], 
+     RowBox[{"1", "-", "z"}]], 
+    RowBox[{"Log", "[", "z", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", " ", "0", ",", " ", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8302745778340473`*^9, 3.830274589485771*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionalExpression", "[", 
+  RowBox[{
+   RowBox[{"-", 
+    RowBox[{"PolyGamma", "[", 
+     RowBox[{"1", ",", 
+      RowBox[{"1", "+", "n"}]}], "]"}]}], ",", 
+   RowBox[{
+    RowBox[{"Re", "[", "n", "]"}], ">", 
+    RowBox[{"-", "1"}]}]}], "]"}]], "Output",
+ CellChangeTimes->{3.830274592027071*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 },
-WindowSize->{927, 1023},
-WindowMargins->{{Automatic, -10}, {Automatic, -8}},
+WindowSize->{927, 1025},
+WindowMargins->{{-10, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -2161,7 +3222,7 @@ Cell[3844, 124, 1550, 36, 671, "Input"]
 Cell[CellGroupData[{
 Cell[5431, 165, 151, 2, 37, "Subsection"],
 Cell[CellGroupData[{
-Cell[5607, 171, 2233, 63, 181, "Input"],
+Cell[5607, 171, 2233, 63, 159, "Input"],
 Cell[7843, 236, 289, 7, 32, "Output"]
 }, Open  ]]
 }, Open  ]]
@@ -2191,13 +3252,13 @@ Cell[CellGroupData[{
 Cell[20417, 593, 258, 3, 44, "Subsection"],
 Cell[20678, 598, 1778, 48, 175, "Input"],
 Cell[22459, 648, 1668, 45, 153, "Input"],
-Cell[24130, 695, 1645, 44, 153, "Input"],
-Cell[25778, 741, 1641, 44, 153, "Input"],
-Cell[27422, 787, 1645, 44, 153, "Input"],
-Cell[29070, 833, 1643, 44, 153, "Input"],
+Cell[24130, 695, 1645, 44, 106, "Input"],
+Cell[25778, 741, 1641, 44, 106, "Input"],
+Cell[27422, 787, 1645, 44, 106, "Input"],
+Cell[29070, 833, 1643, 44, 106, "Input"],
 Cell[CellGroupData[{
 Cell[30738, 881, 137, 2, 32, "Input"],
-Cell[30878, 885, 5463, 161, 253, "Output"]
+Cell[30878, 885, 5463, 161, 121, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -2246,7 +3307,7 @@ Cell[63535, 1609, 301, 4, 44, "Subsection"],
 Cell[63839, 1615, 1421, 46, 517, "Input"],
 Cell[CellGroupData[{
 Cell[65285, 1665, 69, 1, 32, "Input"],
-Cell[65357, 1668, 567, 11, 41, "Message"],
+Cell[65357, 1668, 567, 11, 23, "Message"],
 Cell[65927, 1681, 154, 3, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -2255,7 +3316,7 @@ Cell[66895, 1714, 494, 14, 49, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[67426, 1733, 738, 23, 67, "Input"],
-Cell[68167, 1758, 748, 22, 82, "Output"]
+Cell[68167, 1758, 748, 22, 50, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[68952, 1785, 513, 14, 37, "Input"],
@@ -2270,13 +3331,13 @@ Cell[70680, 1844, 726, 21, 61, "Input"],
 Cell[71409, 1867, 682, 20, 52, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[72128, 1892, 884, 25, 94, "Input"],
+Cell[72128, 1892, 884, 25, 61, "Input"],
 Cell[73015, 1919, 223, 6, 52, "Output"]
 }, Open  ]],
 Cell[73253, 1928, 741, 22, 61, "Input"],
 Cell[CellGroupData[{
 Cell[74019, 1954, 809, 23, 61, "Input"],
-Cell[74831, 1979, 1477, 44, 117, "Output"]
+Cell[74831, 1979, 1477, 44, 73, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[76345, 2028, 365, 11, 62, "Input"],
@@ -2289,6 +3350,88 @@ Cell[79514, 2105, 70, 1, 32, "Output"]
 Cell[CellGroupData[{
 Cell[79621, 2111, 271, 8, 56, "Input"],
 Cell[79895, 2121, 170, 5, 49, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[80138, 2134, 157, 2, 93, "Title"],
+Cell[CellGroupData[{
+Cell[80320, 2140, 142, 2, 65, "Section"],
+Cell[CellGroupData[{
+Cell[80487, 2146, 360, 5, 45, "Subsection"],
+Cell[80850, 2153, 4671, 133, 307, "Input"],
+Cell[85524, 2288, 1732, 47, 165, "Input"],
+Cell[CellGroupData[{
+Cell[87281, 2339, 94, 1, 32, "Input"],
+Cell[87378, 2342, 1646, 51, 109, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[89085, 2400, 197, 3, 65, "Section"],
+Cell[CellGroupData[{
+Cell[89307, 2407, 344, 4, 45, "Subsection"],
+Cell[89654, 2413, 1383, 38, 104, "Input"],
+Cell[91040, 2453, 1230, 38, 127, "Input"],
+Cell[92273, 2493, 1134, 35, 105, "Input"],
+Cell[93410, 2530, 1132, 35, 105, "Input"],
+Cell[CellGroupData[{
+Cell[94567, 2569, 1237, 37, 127, "Input"],
+Cell[95807, 2608, 2392, 37, 95, "Message"],
+Cell[98202, 2647, 1682, 49, 99, "Output"]
+}, Open  ]],
+Cell[99899, 2699, 1851, 52, 143, "Input"],
+Cell[CellGroupData[{
+Cell[101775, 2755, 133, 2, 32, "Input"],
+Cell[101911, 2759, 1379, 42, 99, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[103327, 2806, 100, 1, 32, "Input"],
+Cell[103430, 2809, 1008, 31, 77, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[104475, 2845, 130, 2, 32, "Input"],
+Cell[104608, 2849, 265, 7, 34, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[104910, 2861, 111, 2, 32, "Input"],
+Cell[105024, 2865, 3530, 90, 253, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[108591, 2960, 133, 2, 32, "Input"],
+Cell[108727, 2964, 1744, 47, 143, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[110520, 3017, 318, 4, 45, "Subsection"],
+Cell[CellGroupData[{
+Cell[110863, 3025, 243, 4, 32, "Input"],
+Cell[111109, 3031, 1162, 18, 136, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[112308, 3054, 173, 3, 32, "Input"],
+Cell[112484, 3059, 669, 11, 82, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[113190, 3075, 138, 3, 32, "Input"],
+Cell[113331, 3080, 524, 10, 100, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[113892, 3095, 164, 3, 32, "Input"],
+Cell[114059, 3100, 288, 6, 64, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[114384, 3111, 123, 2, 32, "Input"],
+Cell[114510, 3115, 801, 25, 58, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[115348, 3145, 164, 3, 32, "Input"],
+Cell[115515, 3150, 546, 10, 100, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[116098, 3165, 349, 10, 57, "Input"],
+Cell[116450, 3177, 325, 10, 32, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]

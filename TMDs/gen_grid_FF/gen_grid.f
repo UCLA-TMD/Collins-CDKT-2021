@@ -77,7 +77,7 @@ C-------HE
         DO J = 1, NQ
           Q = QQ(J)
           print *, zh,Q
-          call CxFF(zh,Q,1,DD,UU,SS,SB,UB,DB)
+          call CxFF(zh,Q,0,DD,UU,SS,SB,UB,DB)
           WRITE(4,103) zh*SB,zh*UB,zh*DB,zh*DD,zh*UU,zh*SS,0d0
         ENDDO
       ENDDO
