@@ -1,7 +1,7 @@
 #: table_doi: 10.17182/hepdata.59732.v1/t54,,,,,,,,,,,,
 #: name: Table 53 & 54,,,,,,,,,,,,
 #: description: The Collins asymmetry, from the combined 2007 and 2010 data sets,  for positive and negative hadrons as a function of Z for 2007+2010 full range. ,,,,,,,,,,
-Also shown are the mean values of other variables.,,,,,,,,,,,,
+# Also shown are the mean values of other variables.,,,,,,,,,,,,
 ,,,,,,,,,,,,
 #: data_file: Table54.yaml,,,,,,,,,,,,
 #: keyword reactions: MU+ P --> HADRON X,,,,,,,,,,,,
