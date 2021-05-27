@@ -5,9 +5,9 @@ from scipy.integrate import quad,fixed_quad
 from mpmath import hyp2f1
 from mpmath import psi as polygamma
 
-from Evolve.kernel_q import kernel_q, alphas
-from default_params import defaparams
-from Numerical.FBT import FBT
+from TMDs.Evolve.kernel_q import kernel_q, alphas
+from TMDs.default_params import defaparams
+from TMDs.Numerical.FBT import FBT
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -484,3 +484,9 @@ class DISTRIB:
     def FUT_p_SIDIS(self,PhT,x,z,Q):
         FUTb = np.vectorize(lambda b: b*b*self.FUT_b_SIDIS(b,x,z,Q))
         return self.fbt1.fbt(FUTb, PhT/z, 20,Q)
+
+    def Collins_Asym(self,PhT,x,z,Q):
+        FUU = self.FUU_p_SIDIS(PhT,x,z,Q)
+        FUT = self.FUT_p_SIDIS(PhT,x,z,Q)
+
+        return FUT/FUU
