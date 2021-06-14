@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore")
 
 class DISTRIB:
 
-    def __init__(self,collFF,collPDF):
+    def __init__(self,collFF,collPDF,params):
       self.ffpip = lhapdf.mkPDFs(collFF)
       self.pdfp  = lhapdf.mkPDFs(collPDF)
 
@@ -84,31 +84,31 @@ class DISTRIB:
       self.nss = defaparams['g1']['DSSV']['e']['ss']
 
       #- transversity
-      self.NuuT = defaparams['h1']['KPSY']['N']['uu']
-      self.auuT = defaparams['h1']['KPSY']['a']['uu']
-      self.buuT = defaparams['h1']['KPSY']['b']['uu']
-      self.NddT = defaparams['h1']['KPSY']['N']['uu']
-      self.addT = defaparams['h1']['KPSY']['a']['dd']
-      self.bddT = defaparams['h1']['KPSY']['b']['dd']
-      self.NssT = defaparams['h1']['KPSY']['N']['ss']
-      self.assT = defaparams['h1']['KPSY']['a']['ss']
-      self.bssT = defaparams['h1']['KPSY']['b']['ss']
-      self.NsbT = defaparams['h1']['KPSY']['N']['sb']
-      self.asbT = defaparams['h1']['KPSY']['a']['sb']
-      self.bsbT = defaparams['h1']['KPSY']['b']['sb']
-      self.NdbT = defaparams['h1']['KPSY']['N']['db']
-      self.adbT = defaparams['h1']['KPSY']['a']['db']
-      self.bdbT = defaparams['h1']['KPSY']['b']['db']
-      self.NubT = defaparams['h1']['KPSY']['N']['ub']
-      self.aubT = defaparams['h1']['KPSY']['a']['ub']
-      self.bubT = defaparams['h1']['KPSY']['b']['ub']
+      self.NuuT = params[0]#defaparams['h1']['KPSY']['N']['uu']
+      self.auuT = params[1] #defaparams['h1']['KPSY']['a']['uu']
+      self.buuT = params[2] #defaparams['h1']['KPSY']['b']['uu']
+      self.NddT = params[3] #defaparams['h1']['KPSY']['N']['uu']
+      self.addT = params[4] #defaparams['h1']['KPSY']['a']['dd']
+      self.bddT = params[5] #defaparams['h1']['KPSY']['b']['dd']
+      self.NssT = params[6] #defaparams['h1']['KPSY']['N']['ss']
+      self.assT = params[7] #defaparams['h1']['KPSY']['a']['ss']
+      self.bssT = params[8] #defaparams['h1']['KPSY']['b']['ss']
+      self.NsbT = params[9] #defaparams['h1']['KPSY']['N']['sb']
+      self.asbT = params[10] #defaparams['h1']['KPSY']['a']['sb']
+      self.bsbT = params[11] #defaparams['h1']['KPSY']['b']['sb']
+      self.NdbT = params[12] #defaparams['h1']['KPSY']['N']['db']
+      self.adbT = params[13] #defaparams['h1']['KPSY']['a']['db']
+      self.bdbT = params[14] #defaparams['h1']['KPSY']['b']['db']
+      self.NubT = params[15] #defaparams['h1']['KPSY']['N']['ub']
+      self.aubT = params[16] #defaparams['h1']['KPSY']['a']['ub']
+      self.bubT = params[17] #defaparams['h1']['KPSY']['b']['ub']
 
-      self.Nfav =     defaparams['H3']['KPSY']['N']['fav']
-      self.Nufv =     defaparams['H3']['KPSY']['N']['unf']
-      self.alphafav = defaparams['H3']['KPSY']['a']['fav']
-      self.alphaufv = defaparams['H3']['KPSY']['a']['unf']
-      self.betafav =  defaparams['H3']['KPSY']['b']['fav']
-      self.betaufv =  defaparams['H3']['KPSY']['N']['unf']
+      self.Nfav =     params[18] #defaparams['H3']['KPSY']['N']['fav']
+      self.Nufv =     params[19] #defaparams['H3']['KPSY']['N']['unf']
+      self.alphafav = params[20] #defaparams['H3']['KPSY']['a']['fav']
+      self.alphaufv = params[21] #defaparams['H3']['KPSY']['a']['unf']
+      self.betafav =  params[22] #defaparams['H3']['KPSY']['b']['fav']
+      self.betaufv =  params[23] #defaparams['H3']['KPSY']['N']['unf']
 
       self.NupDSS = defaparams['D1']['DSS']['N']['u+']
       self.NdpDSS = defaparams['D1']['DSS']['N']['d+']
