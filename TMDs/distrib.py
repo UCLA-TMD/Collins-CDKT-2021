@@ -25,6 +25,35 @@ class DISTRIB:
       self.fbt1 = FBT(1)
 
       #-- assign parameters
+
+      #- transversity
+      self.NuuT = params[0]#defaparams['h1']['KPSY']['N']['uu']
+      self.auuT = params[1] #defaparams['h1']['KPSY']['a']['uu']
+      self.buuT = params[2] #defaparams['h1']['KPSY']['b']['uu']
+      self.NddT = params[3] #defaparams['h1']['KPSY']['N']['uu']
+      self.addT = params[4] #defaparams['h1']['KPSY']['a']['dd']
+      self.bddT = params[5] #defaparams['h1']['KPSY']['b']['dd']
+      self.NssT = params[6] #defaparams['h1']['KPSY']['N']['ss']
+      self.assT = params[7] #defaparams['h1']['KPSY']['a']['ss']
+      self.bssT = params[8] #defaparams['h1']['KPSY']['b']['ss']
+      self.NsbT = params[9] #defaparams['h1']['KPSY']['N']['sb']
+      self.asbT = params[10] #defaparams['h1']['KPSY']['a']['sb']
+      self.bsbT = params[11] #defaparams['h1']['KPSY']['b']['sb']
+      self.NdbT = params[12] #defaparams['h1']['KPSY']['N']['db']
+      self.adbT = params[13] #defaparams['h1']['KPSY']['a']['db']
+      self.bdbT = params[14] #defaparams['h1']['KPSY']['b']['db']
+      self.NubT = params[15] #defaparams['h1']['KPSY']['N']['ub']
+      self.aubT = params[16] #defaparams['h1']['KPSY']['a']['ub']
+      self.bubT = params[17] #defaparams['h1']['KPSY']['b']['ub']
+
+      self.Nfav =     params[18] #defaparams['H3']['KPSY']['N']['fav']
+      self.Nufv =     params[19] #defaparams['H3']['KPSY']['N']['unf']
+      self.alphafav = params[20] #defaparams['H3']['KPSY']['a']['fav']
+      self.alphaufv = params[21] #defaparams['H3']['KPSY']['a']['unf']
+      self.betafav =  params[22] #defaparams['H3']['KPSY']['b']['fav']
+      self.betaufv =  params[23] #defaparams['H3']['KPSY']['N']['unf']
+
+
       #- collinear PDF
       self.Au = defaparams['f1']['MSTW2008']['NLO']['Au']
       self.n1 = defaparams['f1']['MSTW2008']['NLO']['n1']
@@ -83,32 +112,6 @@ class DISTRIB:
       self.gss = defaparams['g1']['DSSV']['g']['ss']
       self.nss = defaparams['g1']['DSSV']['e']['ss']
 
-      #- transversity
-      self.NuuT = params[0]#defaparams['h1']['KPSY']['N']['uu']
-      self.auuT = params[1] #defaparams['h1']['KPSY']['a']['uu']
-      self.buuT = params[2] #defaparams['h1']['KPSY']['b']['uu']
-      self.NddT = params[3] #defaparams['h1']['KPSY']['N']['uu']
-      self.addT = params[4] #defaparams['h1']['KPSY']['a']['dd']
-      self.bddT = params[5] #defaparams['h1']['KPSY']['b']['dd']
-      self.NssT = params[6] #defaparams['h1']['KPSY']['N']['ss']
-      self.assT = params[7] #defaparams['h1']['KPSY']['a']['ss']
-      self.bssT = params[8] #defaparams['h1']['KPSY']['b']['ss']
-      self.NsbT = params[9] #defaparams['h1']['KPSY']['N']['sb']
-      self.asbT = params[10] #defaparams['h1']['KPSY']['a']['sb']
-      self.bsbT = params[11] #defaparams['h1']['KPSY']['b']['sb']
-      self.NdbT = params[12] #defaparams['h1']['KPSY']['N']['db']
-      self.adbT = params[13] #defaparams['h1']['KPSY']['a']['db']
-      self.bdbT = params[14] #defaparams['h1']['KPSY']['b']['db']
-      self.NubT = params[15] #defaparams['h1']['KPSY']['N']['ub']
-      self.aubT = params[16] #defaparams['h1']['KPSY']['a']['ub']
-      self.bubT = params[17] #defaparams['h1']['KPSY']['b']['ub']
-
-      self.Nfav =     params[18] #defaparams['H3']['KPSY']['N']['fav']
-      self.Nufv =     params[19] #defaparams['H3']['KPSY']['N']['unf']
-      self.alphafav = params[20] #defaparams['H3']['KPSY']['a']['fav']
-      self.alphaufv = params[21] #defaparams['H3']['KPSY']['a']['unf']
-      self.betafav =  params[22] #defaparams['H3']['KPSY']['b']['fav']
-      self.betaufv =  params[23] #defaparams['H3']['KPSY']['N']['unf']
 
       self.NupDSS = defaparams['D1']['DSS']['N']['u+']
       self.NdpDSS = defaparams['D1']['DSS']['N']['d+']
@@ -457,7 +460,6 @@ class DISTRIB:
         return DD
 
     #-- SIDIS structure functions
-
 
     def FUU_b_SIDIS(self,b,x,z,Q):
         FDD,FUU,FSS,FSB,FUB,FDB = self.TMDPDF(x,Q,b)
