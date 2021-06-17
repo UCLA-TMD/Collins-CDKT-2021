@@ -548,3 +548,45 @@ Cf2py intent(out) res
       end subroutine
 c---------------------------------------------------------
 
+c----------------------------------------------------------------------
+c      PSI - FUNCTION FOR COMPLEX ARGUMENT
+c----------------------------------------------------------------------
+       DOUBLE COMPLEX FUNCTION DIG(Z)
+       DOUBLE COMPLEX Z, ZZ, RZ, DZ, SUB
+       SUB = DCMPLX (0.D0,0.D0)
+       ZZ = Z
+  1    CONTINUE
+       IF (DREAL (ZZ) .LT. 10.) THEN
+         SUB = SUB - 1./ ZZ
+         ZZ = ZZ + 1.
+         GOTO 1
+       END IF
+       RZ = 1./ ZZ
+       DZ = RZ * RZ
+       DIG = SUB + LOG(ZZ) - RZ/2.- DZ/2520. * ( 210.+ DZ * (-21.+
+     1         10.*DZ ))
+       RETURN
+       END
+
+c----------------------------------------------------------------------
+c      PSI - FUNCTION FOR COMPLEX ARGUMENT
+c----------------------------------------------------------------------
+       DOUBLE COMPLEX FUNCTION TRIG(Z)
+       DOUBLE COMPLEX Z, ZZ, RZ, SUB
+       SUB = DCMPLX (0.D0,0.D0)
+       ZZ = Z
+  1    CONTINUE
+       IF (DREAL (ZZ) .LT. 10.) THEN
+         SUB = SUB + 1./ ZZ/ZZ
+         ZZ = ZZ + 1.
+         GOTO 1
+       END IF
+       RZ = 1./ ZZ
+       TRIG= SUB + RZ + 1D0/2D0*RZ**2D0 + 1D0/6D0*RZ**3D0
+     >     -1D0/30D0*RZ**5D0 +1D0/42D0*RZ**7D0
+     >     -1D0/30D0*RZ**9D0
+     >     +5D0/66D0*RZ**11D0-691D0/2730D0*RZ**13D0
+     >     +7D0/6D0*RZ**15D0
+       RETURN
+       END
+

@@ -2,10 +2,12 @@ import lhapdf
 import numpy as np
 from scipy.special import gamma,digamma,beta
 from scipy.integrate import quad,fixed_quad
-from mpmath import hyp2f1
-from mpmath import psi as polygamma
+#from mpmath import hyp2f1
+#from mpmath import psi as polygamma
 
 from TMDs.Evolve.kernel_q import kernel_q, alphas
+from TMDs.Evolve.kernel_q import dig  as digamma
+from TMDs.Evolve.kernel_q import trig as trigamma
 from TMDs.default_params import defaparams
 from TMDs.Numerical.FBT import FBT
 
@@ -397,25 +399,37 @@ class DISTRIB:
 
     def ColnsCDKTuuQ0(self,n):
         return \
-        self.Nfav*gamma(1 + self.betafav)*(-((self.NubDSS*gamma(self.aubDSS + n + self.alphafav)*(hyp2f1(self.aubDSS + n + self.alphafav,-self.betaubDSS,1 + self.aubDSS + n + self.alphafav + self.betafav,1) + \
-        self.gammaubDSS*hyp2f1(self.aubDSS + n + self.alphafav,-self.betaubDSS - self.deltaubDSS,1 + self.aubDSS + n + self.alphafav + self.betafav,1)))/ \
-        ((beta(2 + self.alphaubDSS,1 + self.betaubDSS) + self.gammaubDSS*beta(2 + self.alphaubDSS,1 + self.betaubDSS + self.deltaubDSS))*gamma(1 + self.aubDSS + n + self.alphafav + self.betafav))) + \
-        (self.NupDSS*gamma(self.aupDSS + n + self.alphafav)*(hyp2f1(self.aupDSS + n + self.alphafav,-self.betaupDSS,1 + self.aupDSS + n + self.alphafav + self.betafav,1) + \
-        self.gammaupDSS*hyp2f1(self.aupDSS + n + self.alphafav,-self.betaupDSS - self.deltaupDSS,1 + self.aupDSS + n + self.alphafav + self.betafav,1)))/ \
-        ((beta(2 + self.alphaupDSS,1 + self.betaupDSS) + self.gammaupDSS*beta(2 + self.alphaupDSS,1 + self.betaupDSS + self.deltaupDSS))*gamma(1 + self.aupDSS + n + self.alphafav + self.betafav)))
+        Nfav*(-((NubDSS*gamma(aubDSS + n + alphafav)* \
+        (gammaubDSS*gamma(1 + aubDSS + n + alphafav + betafav + betaubDSS)* \
+        gamma(1 + betafav + betaubDSS + deltaubDSS) +  \
+        gamma(1 + betafav + betaubDSS)* \
+        gamma(1 + aubDSS + n + alphafav + betafav + betaubDSS + deltaubDSS)))/ \
+        ((beta(2 + alphaubDSS,1 + betaubDSS) +  \
+        gammaubDSS*beta(2 + alphaubDSS,1 + betaubDSS + deltaubDSS))* \
+        gamma(1 + aubDSS + n + alphafav + betafav + betaubDSS)* \
+        gamma(1 + aubDSS + n + alphafav + betafav + betaubDSS + deltaubDSS))) +  \
+        (NupDSS*gamma(aupDSS + n + alphafav)* \
+        (gammaupDSS*gamma(1 + aupDSS + n + alphafav + betafav + betaupDSS)* \
+        gamma(1 + betafav + betaupDSS + deltaupDSS) +  \
+        gamma(1 + betafav + betaupDSS)* \
+        gamma(1 + aupDSS + n + alphafav + betafav + betaupDSS + deltaupDSS)))/ \
+        ((beta(2 + alphaupDSS,1 + betaupDSS) +  \
+        gammaupDSS*beta(2 + alphaupDSS,1 + betaupDSS + deltaupDSS))* \
+        gamma(1 + aupDSS + n + alphafav + betafav + betaupDSS)* \
+        gamma(1 + aupDSS + n + alphafav + betafav + betaupDSS + deltaupDSS)))
 
 
     def H1TuuQ(self,n,Q):
         evo = self.DGLAP(n,Q)
         CF =  4./3.
         As = alphas(Q)
-        return self.ColnsCDKTuuQ0(n)*evo*(1.+As/np.pi*(-2*CF*polygamma(1,n+1))-2.*4./3./np.pi*As)
+        return self.ColnsCDKTuuQ0(n)*evo*(1.+As/np.pi*(-2*CF*trigamma(n+1))-2.*4./3./np.pi*As)
 
     def H1TddQ(self,n,Q):
         evo = self.DGLAP(n,Q)
         CF =  4./3.
         As = alphas(Q)
-        return self.ColnsCDKTddQ0(n)*evo*(1.+As/np.pi*(-2*CF*polygamma(1,n+1))-2.*4./3./np.pi*As)
+        return self.ColnsCDKTddQ0(n)*evo*(1.+As/np.pi*(-2*CF*trigamma(n+1))-2.*4./3./np.pi*As)
 
     def H1TuuxQ(self,x,Q):
         phi = 3.*np.pi/4.
