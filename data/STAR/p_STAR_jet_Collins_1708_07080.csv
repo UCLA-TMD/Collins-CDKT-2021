@@ -6,7 +6,7 @@
 #: keyword cmenergies: 500.0,,,,,,,,
 #: keyword phrases: polarized pp collisions | jet | pions | midrapidity,,,,,,,,
 #: Particle-jet $p_T$ [GeV/$c$],,,$A_{UT}(\pi^+, 0 < \eta_{jet}< 1)$ for $<z> = 0.14$,,,,
-particle,<eta>,<z>,Particle-jet $p_T$ [GeV/$c$],Particle-jet $p_T$ [GeV/$c$] LOW,Particle-jet $p_T$ [GeV/$c$] HIGH,$A_{UT}^{\sin(\theta_S - \theta_H)}$,Stat. error,Syst. Error
+particle,<eta>,<z>,pTjet,Particle-jet $p_T$ [GeV/$c$] LOW,Particle-jet $p_T$ [GeV/$c$] HIGH,$A_{UT}^{\sin(\theta_S - \theta_H)}$,Stat. error,Syst. Error
 pi+,0.5,0.14,6.242,5.972,6.512,0.011,0.018,0.006
 pi+,0.5,0.14,7.993,7.473,8.513,0.0046,0.013,0.001
 pi+,0.5,0.14,9.627,9.007,10.247,-0.0062,0.009,0.0021

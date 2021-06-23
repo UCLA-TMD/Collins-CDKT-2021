@@ -20,9 +20,6 @@ class DISTRIB:
       self.ffpip = lhapdf.mkPDFs(collFF)
       self.pdfp  = lhapdf.mkPDFs(collPDF)
 
-      self.ffpip = lhapdf.mkPDFs(collFF)
-      self.pdfp  = lhapdf.mkPDFs(collPDF)
-
       self.fbt0 = FBT(0)
       self.fbt1 = FBT(1)
 
