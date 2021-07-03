@@ -19,6 +19,21 @@ data = rd.readdata()
 
 
 #-- define the error function to minimize
+def calc_res(dat):
+    theo_CA = []
+    for i in range(len(dat)):
+        theo_CA.append(d.Collins_Asym(dat['Php'][i],
+                                      dat['x'][i],
+                                      dat['z'][i],
+                                      dat['Q'][i]))
+
+    data['theo_CA'] = theo_CA
+
+    dat['res'] = (dat['theo_CA'] - dat['Collins_asym'])**2/dat['error']**2
+
+    return dat
+
+
 def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
                 h1auu,h1add,h1ass,h1adb,h1aub,h1asb,
                 h1buu,h1bdd,h1bss,h1bub,h1bdb,h1bsb,
@@ -37,6 +52,7 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
                                       data['JLAB']['Q'][i]))
 
     data['JLAB']['theo_CA'] = theo_CA
+
     data['JLAB']['error'] = np.sqrt(data['JLAB']['stat_u']**2 + data['JLAB']['syst_u']**2)
     data['JLAB']['res'] = (data['JLAB']['theo_CA'] - data['JLAB']['Collins_asym'])**2/data['JLAB']['error']**2
 
@@ -55,7 +71,7 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
 
         data['COMPASS10'][proj]['theo_CA'] = theo_CA
 
-        data['COMPASS10'][proj]['res'] = (data['COMPASS10'][proj]['theo_CA'] - data['COMPASS10'][proj]['Collins_asym'])**2/data['COMPASS10'][proj]['error']**2
+        data['COMPASS10'][proj]['res'] = 1#(data['COMPASS10'][proj]['theo_CA'] - data['COMPASS10'][proj]['Collins_asym'])**2/data['COMPASS10'][proj]['error']**2
 
     # #-- COMPASS 2004
     for proj in ['x','z','p']:
@@ -161,7 +177,6 @@ m = Minuit(
     H3bfav = inputparams['H3']['KPSY']['b']['fav'] ,
     H3bunf = inputparams['H3']['KPSY']['b']['unf'] )
 
-
 #-- start minimization
 m.fixed["h1Nss"] = True
 m.fixed["h1Ndb"] = True
@@ -178,20 +193,28 @@ m.fixed["h1bsb"] = True
 
 
 m.migrad(ncall=1)
-m.simplex()
-m.minos()
+# m.simplex()
+# m.minos()
 m.hesse()
 
--- save theoretical calculations of Asymm.
+#-- save theoretical calculations of Asymm.
 outdata = {}
-for ie in ['COMPASS']:
+for ie in ['COMPASS10','COMPASS04']:
     for proj in data[ie]:
         data[ie][proj]['proj'] = proj
-    outdata[ie] = pd.concat(data['COMPASS'])
+    outdata[ie] = pd.concat(data[ie])
 
 data['HERMES'].to_csv('Hermes.out',sep=' ')
 data['JLAB'].to_csv('JLab.out',sep=' ')
-outdata['COMPASS'].to_csv('Compass.out',sep=' ')
+outdata['COMPASS10'].to_csv('Compass2010_p.out',sep=' ')
+data['COMPASS10']['x'].to_csv('x_Compass2010_p.out',sep=' ')
+data['COMPASS10']['z'].to_csv('z_Compass2010_p.out',sep=' ')
+data['COMPASS10']['p'].to_csv('p_Compass2010_p.out',sep=' ')
+
+outdata['COMPASS04'].to_csv('Compass2004_D.out',sep=' ')
+data['COMPASS04']['x'].to_csv('x_Compass2004_D.out',sep=' ')
+data['COMPASS04']['z'].to_csv('z_Compass2004_D.out',sep=' ')
+data['COMPASS04']['p'].to_csv('p_Compass2004_D.out',sep=' ')
 
 
 #-- print chi2 output
