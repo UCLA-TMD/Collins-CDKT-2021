@@ -8,7 +8,7 @@ import reader as rd
 from TMDs.distrib import DISTRIB
 from input_params import inputparams
 
-vv=False #verbosity
+vv=True #verbosity
 
 #-- choose which collinear PDF and FF to use
 FFname = 'FDSS_PIP'
@@ -31,7 +31,6 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
     if vv: print('calculating JLAB')
     theo_CA = []
     for i in range(len(data['JLAB'])):
-        theo_CA.append(1)
         theo_CA.append(d.Collins_Asym(data['JLAB']['Php'][i],
                                       data['JLAB']['x'][i],
                                       data['JLAB']['z'][i],
@@ -41,37 +40,53 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
     data['JLAB']['error'] = np.sqrt(data['JLAB']['stat_u']**2 + data['JLAB']['syst_u']**2)
     data['JLAB']['res'] = (data['JLAB']['theo_CA'] - data['JLAB']['Collins_asym'])**2/data['JLAB']['error']**2
 
-    # #-- COMPASS
+    # #-- COMPASS 2010
     for proj in ['x','z','p']:
 
-        if vv: print('calulating Compass in ',proj)
+        if vv: print('calulating Compass 2010 in ',proj)
 
         theo_CA = []
 
-        for i in range(len(data['COMPASS'][proj])):
-            theo_CA.append(1)
-            theo_CA.append(d.Collins_Asym(data['COMPASS'][proj]['pT'][i],
-                                          data['COMPASS'][proj]['x'][i],
-                                          data['COMPASS'][proj]['z'][i],
-                                          data['COMPASS'][proj]['Q'][i]))
+        for i in range(len(data['COMPASS10'][proj])):
+            theo_CA.append(d.Collins_Asym(data['COMPASS10'][proj]['pT'][i],
+                                          data['COMPASS10'][proj]['x'][i],
+                                          data['COMPASS10'][proj]['z'][i],
+                                          data['COMPASS10'][proj]['Q'][i]))
 
-        data['COMPASS'][proj]['theo_CA'] = theo_CA
+        data['COMPASS10'][proj]['theo_CA'] = theo_CA
 
-        data['COMPASS'][proj]['res'] = (data['COMPASS'][proj]['theo_CA'] - data['COMPASS'][proj]['Collins_asym'])**2/data['COMPASS'][proj]['error']**2
+        data['COMPASS10'][proj]['res'] = (data['COMPASS10'][proj]['theo_CA'] - data['COMPASS10'][proj]['Collins_asym'])**2/data['COMPASS10'][proj]['error']**2
 
-    # #-- HERMES
-    iy = 0
-    if vv: print('calulating HERMES')
-    theo_CA = []
-    for i in range(len(data['HERMES'])):
-        theo_CA.append(d.Collins_Asym(data['HERMES']['pT'][i],
-                                      data['HERMES']['x'][i],
-                                      data['HERMES']['z'][i],
-                                      data['HERMES']['Q'][i]))
+    # #-- COMPASS 2004
+    for proj in ['x','z','p']:
 
-    data['HERMES']['theo_CA'] = theo_CA
-    data['HERMES']['error'] = np.sqrt(data['HERMES']['stat_u']**2 + data['HERMES']['syst_u']**2)
-    data['HERMES']['res'] =  (data['HERMES']['theo_CA'] - data['HERMES']['Collins_asym'])**2/data['HERMES']['error']**2
+        if vv: print('calulating Compass 2004 in ',proj)
+
+        theo_CA = []
+
+        for i in range(len(data['COMPASS04'][proj])):
+            theo_CA.append(d.Collins_Asym(data['COMPASS04'][proj]['pT'][i],
+                                          data['COMPASS04'][proj]['x'][i],
+                                          data['COMPASS04'][proj]['z'][i],
+                                          data['COMPASS04'][proj]['Q'][i]))
+
+        data['COMPASS04'][proj]['theo_CA'] = theo_CA
+
+        data['COMPASS04'][proj]['res'] = (data['COMPASS04'][proj]['theo_CA'] - data['COMPASS04'][proj]['Collins_asym'])**2/data['COMPASS04'][proj]['error']**2
+
+    # # #-- HERMES
+    # iy = 0
+    # if vv: print('calulating HERMES')
+    # theo_CA = []
+    # for i in range(len(data['HERMES'])):
+    #     theo_CA.append(d.Collins_Asym(data['HERMES']['pT'][i],
+    #                                   data['HERMES']['x'][i],
+    #                                   data['HERMES']['z'][i],
+    #                                   data['HERMES']['Q'][i]))
+    #
+    # data['HERMES']['theo_CA'] = theo_CA
+    # data['HERMES']['error'] = np.sqrt(data['HERMES']['stat_u']**2 + data['HERMES']['syst_u']**2)
+    # data['HERMES']['res'] =  (data['HERMES']['theo_CA'] - data['HERMES']['Collins_asym'])**2/data['HERMES']['error']**2
 
     # #-- STAR
     # for proj in ['j','z','p']:
@@ -96,15 +111,23 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
     if vv: print('calculating chi2')
 
     chi2 = {}
+    chi2['JLAB'] = {}
+    chi2['JLAB']['tot'] = data['JLAB']['res'].sum()
+    # chi2['HERMES'] = {}
+    # chi2['HERMES']['tot'] = data['HERMES']['res'].sum()
+    chi2['COMPASS04']={}
+    chi2['COMPASS04']['x'] = data['COMPASS04']['x']['res'].sum()
+    chi2['COMPASS04']['p'] = data['COMPASS04']['p']['res'].sum()
+    chi2['COMPASS04']['z'] = data['COMPASS04']['z']['res'].sum()
+    chi2['COMPASS04']['tot'] = chi2['COMPASS04']['x'] + chi2['COMPASS04']['z'] + chi2['COMPASS04']['p']
+    chi2['COMPASS10']={}
+    chi2['COMPASS10']['x'] = data['COMPASS10']['x']['res'].sum()
+    chi2['COMPASS10']['p'] = data['COMPASS10']['p']['res'].sum()
+    chi2['COMPASS10']['z'] = data['COMPASS10']['z']['res'].sum()
+    chi2['COMPASS10']['tot'] = chi2['COMPASS10']['x'] + chi2['COMPASS10']['z'] + chi2['COMPASS10']['p']
 
-    chi2['JLAB'] = data['JLAB']['res'].sum()
-    chi2['HERMES'] = data['HERMES']['res'].sum()
-    chi2['COMPASS']={}
-    chi2['COMPASS']['x'] = data['COMPASS']['x']['res'].sum()
-    chi2['COMPASS']['p'] = data['COMPASS']['p']['res'].sum()
-    chi2['COMPASS']['z'] = data['COMPASS']['z']['res'].sum()
-
-    chi2['tot'] = chi2['JLAB'] + chi2['HERMES'] + chi2['COMPASS']['x'] + chi2['COMPASS']['p'] + chi2['COMPASS']['z']
+    # chi2['tot'] = chi2['JLAB'] + chi2['HERMES'] + chi2['COMPASS']['x'] + chi2['COMPASS']['p'] + chi2['COMPASS']['z']
+    chi2['tot'] = chi2['JLAB']['tot'] + chi2['COMPASS04']['tot'] + chi2['COMPASS10']['tot']
 
     return chi2['tot']
 
@@ -155,11 +178,11 @@ m.fixed["h1bsb"] = True
 
 
 m.migrad(ncall=1)
-# m.simplex()
-# m.minos()
+m.simplex()
+m.minos()
 m.hesse()
 
-#-- save theoretical calculations of Asymm.
+-- save theoretical calculations of Asymm.
 outdata = {}
 for ie in ['COMPASS']:
     for proj in data[ie]:
