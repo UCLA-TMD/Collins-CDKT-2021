@@ -7,9 +7,9 @@ def readdata(mdir='.'):
     data = {}
     #-- import Collins asym. from Compass 1205.5121
     data['COMPASS10'] = {}
-    data['COMPASS10']['x'] = pd.read_csv(datdir+'/COMPASS200710_p/x_prot_COMPASS_Collins_1408_4405.csv',header=12)
-    data['COMPASS10']['p'] = pd.read_csv(datdir+'/COMPASS200710_p/p_prot_COMPASS_Collins_1408_4405.csv',header=12)
-    data['COMPASS10']['z'] = pd.read_csv(datdir+'/COMPASS200710_p/z_prot_COMPASS_Collins_1408_4405.csv',header=12)
+    data['COMPASS10']['x'] = pd.read_csv(datdir+'/COMPASS200710_p/x_prot_COMPASS_Collins_1408_4405.csv',header=11)
+    data['COMPASS10']['p'] = pd.read_csv(datdir+'/COMPASS200710_p/p_prot_COMPASS_Collins_1408_4405.csv',header=11)
+    data['COMPASS10']['z'] = pd.read_csv(datdir+'/COMPASS200710_p/z_prot_COMPASS_Collins_1408_4405.csv',header=11)
     #-- import Collins asym. from Compass 0802.2160
     data['COMPASS04'] = {}
     data['COMPASS04']['x'] = pd.read_csv(datdir+'/COMPASS2004_D/x_COMPASS_Collins_0802_2160.csv',header=11)
