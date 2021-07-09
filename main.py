@@ -2,6 +2,7 @@
 import os
 import pandas as pd
 import numpy as np
+import lhapdf
 from iminuit import Minuit
 
 import reader as rd
@@ -13,6 +14,9 @@ vv=True #verbosity
 #-- choose which collinear PDF and FF to use
 FFname = 'FDSS_PIP'
 PDFname = 'CT14TMD'
+
+ffpip_ = lhapdf.mkPDFs(FFname)
+pdfp_  = lhapdf.mkPDFs(PDFname)
 
 #read experimental data
 data = rd.readdata()
@@ -41,7 +45,7 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
 
     params = [h1Nuu,h1auu,h1buu,h1Ndd,h1add,h1bdd,h1Nss,h1ass,h1bss,h1Nsb,h1asb,h1bsb,h1Ndb,h1adb,h1bdb,h1Nub,h1aub,h1bub,H3Nfav,H3Nunf,H3afav,H3aunf,H3bfav,H3bunf]
 
-    d = DISTRIB(FFname,PDFname,params)
+    d = DISTRIB(ffpip_,pdfp_,params)
 
     if vv: print('calculating JLAB')
     theo_CA = []
@@ -59,7 +63,7 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
     # #-- COMPASS 2010
     for proj in ['x','z','p']:
 
-        if vv: print('calulating Compass 2010 in ',proj)
+        if vv: print('calculating Compass 2010 in ',proj)
 
         theo_CA = []
 
@@ -76,7 +80,7 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
     # #-- COMPASS 2004
     for proj in ['x','z','p']:
 
-        if vv: print('calulating Compass 2004 in ',proj)
+        if vv: print('calculating Compass 2004 in ',proj)
 
         theo_CA = []
 
@@ -92,7 +96,7 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
 
     # # #-- HERMES
     # iy = 0
-    # if vv: print('calulating HERMES')
+    # if vv: print('calculating HERMES')
     # theo_CA = []
     # for i in range(len(data['HERMES'])):
     #     theo_CA.append(d.Collins_Asym(data['HERMES']['pT'][i],
@@ -107,7 +111,7 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
     # #-- STAR
     # for proj in ['j','z','p']:
     #
-    #     if vv: print('calulating STAR in ',proj)
+    #     if vv: print('calculating STAR in ',proj)
     #
     #     theo_CA = []
     #

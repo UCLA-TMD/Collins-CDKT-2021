@@ -17,8 +17,8 @@ warnings.filterwarnings("ignore")
 class DISTRIB:
 
     def __init__(self,collFF,collPDF,params):
-      self.ffpip = lhapdf.mkPDFs(collFF)
-      self.pdfp  = lhapdf.mkPDFs(collPDF)
+      self.ffpip = collFF#lhapdf.mkPDFs(collFF)
+      self.pdfp  = collPDF#lhapdf.mkPDFs(collPDF)
 
       self.fbt0 = FBT(0)
       self.fbt1 = FBT(1)
