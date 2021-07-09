@@ -7,13 +7,13 @@ def readdata(mdir='.'):
     data = {}
     #-- import Collins asym. from Compass 1205.5121
     data['COMPASS10'] = {}
-    data['COMPASS10']['p'] = pd.read_csv(datdir+'/COMPASS2010_p/p_COMPASS_Collins_1205_5121.csv',header=12)
-    data['COMPASS10']['x'] = pd.read_csv(datdir+'/COMPASS2010_p/x_COMPASS_Collins_1205_5121.csv',header=12)
-    data['COMPASS10']['z'] = pd.read_csv(datdir+'/COMPASS2010_p/z_COMPASS_Collins_1205_5121.csv',header=12)
+    data['COMPASS10']['x'] = pd.read_csv(datdir+'/COMPASS200710_p/x_prot_COMPASS_Collins_1408_4405.csv',header=12)
+    data['COMPASS10']['p'] = pd.read_csv(datdir+'/COMPASS200710_p/p_prot_COMPASS_Collins_1408_4405.csv',header=12)
+    data['COMPASS10']['z'] = pd.read_csv(datdir+'/COMPASS200710_p/z_prot_COMPASS_Collins_1408_4405.csv',header=12)
     #-- import Collins asym. from Compass 0802.2160
     data['COMPASS04'] = {}
-    data['COMPASS04']['p'] = pd.read_csv(datdir+'/COMPASS2004_D/p_COMPASS_Collins_0802_2160.csv',header=11)
     data['COMPASS04']['x'] = pd.read_csv(datdir+'/COMPASS2004_D/x_COMPASS_Collins_0802_2160.csv',header=11)
+    data['COMPASS04']['p'] = pd.read_csv(datdir+'/COMPASS2004_D/p_COMPASS_Collins_0802_2160.csv',header=11)
     data['COMPASS04']['z'] = pd.read_csv(datdir+'/COMPASS2004_D/z_COMPASS_Collins_0802_2160.csv',header=11)
     #-- import Collins asym. in jet from STAR 1708.07080
     data['STAR'] = {}
@@ -24,5 +24,7 @@ def readdata(mdir='.'):
     data['HERMES'] = pd.read_csv(datdir+'/HERMES/HERMES_Collins_2007_07755.csv',header=3)
     #-- import Collins asym. from HERMES 1106.0363
     data['JLAB'] = pd.read_csv(datdir+'/JLab/JLAB_HALL_A_Collins_1106_0363.csv',header=1)
+    # data['JLAB']['error'] = np.sqrt(data['JLAB']['stat_u']**2 + data['JLAB']['syst_u']**2)
+
 
     return data
