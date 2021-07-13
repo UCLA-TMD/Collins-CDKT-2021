@@ -10,6 +10,11 @@ from TMDs.distrib import DISTRIB
 from input_params import inputparams
 
 vv=True #verbosity
+Hbool   = False
+C10bool = False
+C04bool = False
+Jbool   = True
+Sbool   = False
 
 #-- choose which collinear PDF and FF to use
 FFname = 'FDSS_PIP'
@@ -47,115 +52,132 @@ def chi_squared(h1Nuu,h1Ndd,h1Nss,h1Nub,h1Ndb,h1Nsb,
 
     d = DISTRIB(ffpip_,pdfp_,params)
 
-    if vv: print('calculating JLAB')
-    theo_CA = []
-    for i in range(len(data['JLAB'])):
-        theo_CA.append(d.Collins_Asym(data['JLAB']['Php'][i],
-                                      data['JLAB']['x'][i],
-                                      data['JLAB']['z'][i],
-                                      data['JLAB']['Q'][i]))
+    for aa in np.linspace(1,21,20):
+        print(aa,d.TransvddQ0(aa))
 
-    data['JLAB']['theo_CA'] = theo_CA
-
-    data['JLAB']['error'] = np.sqrt(data['JLAB']['stat_u']**2 + data['JLAB']['syst_u']**2)
-    data['JLAB']['res'] = (data['JLAB']['theo_CA'] - data['JLAB']['Collins_asym'])**2/data['JLAB']['error']**2
-
-    # #-- COMPASS 2010
-    for proj in ['x','z','p']:
-
-        if vv: print('calculating Compass 2010 in ',proj)
-
-        theo_CA = []
-
-        for i in range(len(data['COMPASS10'][proj])):
-            theo_CA.append(d.Collins_Asym(data['COMPASS10'][proj]['pT'][i],
-                                          data['COMPASS10'][proj]['x'][i],
-                                          data['COMPASS10'][proj]['z'][i],
-                                          data['COMPASS10'][proj]['Q'][i]))
-
-        data['COMPASS10'][proj]['theo_CA'] = theo_CA
-
-        data['COMPASS10'][proj]['res'] = 1#(data['COMPASS10'][proj]['theo_CA'] - data['COMPASS10'][proj]['Collins_asym'])**2/data['COMPASS10'][proj]['error']**2
-
-    # #-- COMPASS 2004
-    for proj in ['x','z','p']:
-
-        if vv: print('calculating Compass 2004 in ',proj)
-
-        theo_CA = []
-
-        for i in range(len(data['COMPASS04'][proj])):
-            theo_CA.append(d.Collins_Asym(data['COMPASS04'][proj]['pT'][i],
-                                          data['COMPASS04'][proj]['x'][i],
-                                          data['COMPASS04'][proj]['z'][i],
-                                          data['COMPASS04'][proj]['Q'][i]))
-
-        data['COMPASS04'][proj]['theo_CA'] = theo_CA
-
-        data['COMPASS04'][proj]['res'] = (data['COMPASS04'][proj]['theo_CA'] - data['COMPASS04'][proj]['Collins_asym'])**2/data['COMPASS04'][proj]['error']**2
-
-    # # #-- HERMES
-    # iy = 0
-    # if vv: print('calculating HERMES')
-    # theo_CA = []
-    # for i in range(len(data['HERMES'])):
-    #     theo_CA.append(d.Collins_Asym(data['HERMES']['pT'][i],
-    #                                   data['HERMES']['x'][i],
-    #                                   data['HERMES']['z'][i],
-    #                                   data['HERMES']['Q'][i]))
+    # #-- calculate chi2
+    # if vv: print('calculating chi2')
     #
-    # data['HERMES']['theo_CA'] = theo_CA
-    # data['HERMES']['error'] = np.sqrt(data['HERMES']['stat_u']**2 + data['HERMES']['syst_u']**2)
-    # data['HERMES']['res'] =  (data['HERMES']['theo_CA'] - data['HERMES']['Collins_asym'])**2/data['HERMES']['error']**2
-
-    # #-- STAR
-    # for proj in ['j','z','p']:
+    # chi2 = {}
     #
-    #     if vv: print('calculating STAR in ',proj)
+    # #-- JLAB
+    # if Jbool:
     #
+    #     if vv: print('calculating JLAB')
     #     theo_CA = []
+    #     for i in range(len(data['JLAB'])):
+    #         theo_CA.append(d.Collins_Asym(data['JLAB']['Php'][i],
+    #                                       data['JLAB']['x'][i],
+    #                                       data['JLAB']['z'][i],
+    #                                       data['JLAB']['Q'][i]))
     #
-    #     for i in range(len(data['STAR'])):
-    #         theo_CA.append(d.Collins_Asym(data['STAR'][proj]['pT'][i],
-    #                                       data['STAR'][proj]['x'][i],
-    #                                       data['STAR'][proj]['z'][i],
-    #                                       data['STAR'][proj]['Q'][i]))
+    #     data['JLAB']['theo_CA'] = theo_CA
     #
-    #     data['STAR'][proj]['theo_CA'] = theo_CA
+    #     data['JLAB']['error'] = np.sqrt(data['JLAB']['stat_u']**2 + data['JLAB']['syst_u']**2)
+    #     data['JLAB']['res'] = (data['JLAB']['theo_CA'] - data['JLAB']['Collins_asym'])**2/data['JLAB']['error']**2
     #
-    #     data['STAR'][proj]['res'] = (data['STAR']['theo_CA'] - data['STAR']['Collins_asym'])**2/data['STAR']['error']**2
+    # # #-- COMPASS 2010
+    # if C10bool:
+    #     for proj in ['x','z','p']:
+    #
+    #         if vv: print('calculating Compass 2010 in ',proj)
+    #
+    #         theo_CA = []
+    #
+    #         for i in range(len(data['COMPASS10'][proj])):
+    #             theo_CA.append(d.Collins_Asym(data['COMPASS10'][proj]['pT'][i],
+    #                                           data['COMPASS10'][proj]['x'][i],
+    #                                           data['COMPASS10'][proj]['z'][i],
+    #                                           data['COMPASS10'][proj]['Q'][i]))
+    #
+    #         data['COMPASS10'][proj]['theo_CA'] = theo_CA
+    #
+    #         data['COMPASS10'][proj]['res'] = (data['COMPASS10'][proj]['theo_CA'] - data['COMPASS10'][proj]['Collins_asym'])**2/data['COMPASS10'][proj]['error']**2
+    #
+    #         chi2['JLAB'] = {}
+    #         chi2['JLAB']['tot'] = data['JLAB']['res'].sum()
+    #
+    # # #-- COMPASS 2004
+    # if C04bool:
+    #     for proj in ['x','z','p']:
+    #
+    #         if vv: print('calculating Compass 2004 in ',proj)
+    #
+    #         theo_CA = []
+    #
+    #         for i in range(len(data['COMPASS04'][proj])):
+    #             theo_CA.append(d.Collins_Asym(data['COMPASS04'][proj]['pT'][i],
+    #                                           data['COMPASS04'][proj]['x'][i],
+    #                                           data['COMPASS04'][proj]['z'][i],
+    #                                           data['COMPASS04'][proj]['Q'][i]))
+    #
+    #         data['COMPASS04'][proj]['theo_CA'] = theo_CA
+    #
+    #         data['COMPASS04'][proj]['res'] = (data['COMPASS04'][proj]['theo_CA'] - data['COMPASS04'][proj]['Collins_asym'])**2/data['COMPASS04'][proj]['error']**2
+    #
+    #         chi2['COMPASS04']={}
+    #         chi2['COMPASS04']['x'] = data['COMPASS04']['x']['res'].sum()
+    #         chi2['COMPASS04']['p'] = data['COMPASS04']['p']['res'].sum()
+    #         chi2['COMPASS04']['z'] = data['COMPASS04']['z']['res'].sum()
+    #         chi2['COMPASS04']['tot'] = chi2['COMPASS04']['x'] + chi2['COMPASS04']['z'] + chi2['COMPASS04']['p']
+    #
+    # # # #-- HERMES
+    # if Hbool:
+    #
+    #     if vv: print('calculating HERMES')
+    #     theo_CA = []
+    #     for i in range(len(data['HERMES'])):
+    #         theo_CA.append(d.Collins_Asym(data['HERMES']['pT'][i],
+    #                                       data['HERMES']['x'][i],
+    #                                       data['HERMES']['z'][i],
+    #                                       data['HERMES']['Q'][i]))
+    #
+    #     data['HERMES']['theo_CA'] = theo_CA
+    #     data['HERMES']['error'] = np.sqrt(data['HERMES']['stat_u']**2 + data['HERMES']['syst_u']**2)
+    #     data['HERMES']['res'] =  (data['HERMES']['theo_CA'] - data['HERMES']['Collins_asym'])**2/data['HERMES']['error']**2
+    #
+    #     chi2['HERMES'] = {}
+    #     chi2['HERMES']['tot'] = data['HERMES']['res'].sum()
+    #
+    # # #-- STAR
+    # if Sbool:
+    #     for proj in ['j','z','p']:
+    #
+    #         if vv: print('calculating STAR in ',proj)
+    #
+    #         theo_CA = []
+    #
+    #         for i in range(len(data['STAR'])):
+    #             theo_CA.append(d.Collins_Asym(data['STAR'][proj]['pT'][i],
+    #                                           data['STAR'][proj]['x'][i],
+    #                                           data['STAR'][proj]['z'][i],
+    #                                           data['STAR'][proj]['Q'][i]))
+    #
+    #         data['STAR'][proj]['theo_CA'] = theo_CA
+    #
+    #         data['STAR'][proj]['res'] = (data['STAR']['theo_CA'] - data['STAR']['Collins_asym'])**2/data['STAR']['error']**2
+    #
+    #         chi2['STAR']={}
+    #         chi2['STAR']['j'] = data['STAR']['x']['res'].sum()
+    #         chi2['STAR']['p'] = data['STAR']['p']['res'].sum()
+    #         chi2['STAR']['z'] = data['STAR']['z']['res'].sum()
+    #         chi2['STAR']['tot'] = chi2['STAR']['j'] + chi2['STAR']['z'] + chi2['STAR']['p']
+    #
+    #
+    # # chi2['tot'] = chi2['JLAB'] + chi2['HERMES'] + chi2['COMPASS']['x'] + chi2['COMPASS']['p'] + chi2['COMPASS']['z']
+    # chi2['tot'] = 0
+    # for ip in chi2:
+    #     chi2['tot'] += chi2[ip]['tot']
 
-
-
-    #-- calculate chi2
-    if vv: print('calculating chi2')
-
-    chi2 = {}
-    chi2['JLAB'] = {}
-    chi2['JLAB']['tot'] = data['JLAB']['res'].sum()
-    # chi2['HERMES'] = {}
-    # chi2['HERMES']['tot'] = data['HERMES']['res'].sum()
-    chi2['COMPASS04']={}
-    chi2['COMPASS04']['x'] = data['COMPASS04']['x']['res'].sum()
-    chi2['COMPASS04']['p'] = data['COMPASS04']['p']['res'].sum()
-    chi2['COMPASS04']['z'] = data['COMPASS04']['z']['res'].sum()
-    chi2['COMPASS04']['tot'] = chi2['COMPASS04']['x'] + chi2['COMPASS04']['z'] + chi2['COMPASS04']['p']
-    chi2['COMPASS10']={}
-    chi2['COMPASS10']['x'] = data['COMPASS10']['x']['res'].sum()
-    chi2['COMPASS10']['p'] = data['COMPASS10']['p']['res'].sum()
-    chi2['COMPASS10']['z'] = data['COMPASS10']['z']['res'].sum()
-    chi2['COMPASS10']['tot'] = chi2['COMPASS10']['x'] + chi2['COMPASS10']['z'] + chi2['COMPASS10']['p']
-
-    # chi2['tot'] = chi2['JLAB'] + chi2['HERMES'] + chi2['COMPASS']['x'] + chi2['COMPASS']['p'] + chi2['COMPASS']['z']
-    chi2['tot'] = chi2['JLAB']['tot'] + chi2['COMPASS04']['tot'] + chi2['COMPASS10']['tot']
-
-    return chi2['tot']
+    # return chi2['tot']
 
 chi_squared.errordef = Minuit.LEAST_SQUARES
 
+
 #-- initialize minuit
-m = Minuit(
-    chi_squared,
+# m = Minuit(
+chi_squared(
+    # chi_squared,
     h1Ndd  = inputparams['h1']['KPSY']['N']['dd']  ,
     h1Nuu  = inputparams['h1']['KPSY']['N']['uu']  ,
     h1Nss  = inputparams['h1']['KPSY']['N']['ss']  ,
@@ -181,58 +203,69 @@ m = Minuit(
     H3bfav = inputparams['H3']['KPSY']['b']['fav'] ,
     H3bunf = inputparams['H3']['KPSY']['b']['unf'] )
 
-#-- start minimization
-m.fixed["h1Nss"] = True
-m.fixed["h1Ndb"] = True
-m.fixed["h1Nub"] = True
-m.fixed["h1Nsb"] = True
-m.fixed["h1ass"] = True
-m.fixed["h1adb"] = True
-m.fixed["h1aub"] = True
-m.fixed["h1asb"] = True
-m.fixed["h1bss"] = True
-m.fixed["h1bdb"] = True
-m.fixed["h1bub"] = True
-m.fixed["h1bsb"] = True
+
+# #-- start minimization
+# m.fixed["h1Nss"] = True
+# m.fixed["h1Ndb"] = True
+# m.fixed["h1Nub"] = True
+# m.fixed["h1Nsb"] = True
+# m.fixed["h1ass"] = True
+# m.fixed["h1adb"] = True
+# m.fixed["h1aub"] = True
+# m.fixed["h1asb"] = True
+# m.fixed["h1bss"] = True
+# m.fixed["h1bdb"] = True
+# m.fixed["h1bub"] = True
+# m.fixed["h1bsb"] = True
 
 
-m.migrad(ncall=1)
+# m.migrad(ncall=1)
 # m.simplex()
 # m.minos()
-m.hesse()
+# m.hesse()
 
-#-- save theoretical calculations of Asymm.
-outdata = {}
-for ie in ['COMPASS10','COMPASS04']:
-    for proj in data[ie]:
-        data[ie][proj]['proj'] = proj
-    outdata[ie] = pd.concat(data[ie])
-
-data['HERMES'].to_csv('Hermes.out',sep=' ')
-data['JLAB'].to_csv('JLab.out',sep=' ')
-outdata['COMPASS10'].to_csv('Compass2010_p.out',sep=' ')
-data['COMPASS10']['x'].to_csv('x_Compass2010_p.out',sep=' ')
-data['COMPASS10']['z'].to_csv('z_Compass2010_p.out',sep=' ')
-data['COMPASS10']['p'].to_csv('p_Compass2010_p.out',sep=' ')
-
-outdata['COMPASS04'].to_csv('Compass2004_D.out',sep=' ')
-data['COMPASS04']['x'].to_csv('x_Compass2004_D.out',sep=' ')
-data['COMPASS04']['z'].to_csv('z_Compass2004_D.out',sep=' ')
-data['COMPASS04']['p'].to_csv('p_Compass2004_D.out',sep=' ')
-
-
-#-- print chi2 output
-fit_info = [
-    f"chi2dof = {m.fval:.1f}",
-]
-for p, v, e in zip(m.parameters, m.values, m.errors):
-    fit_info.append(f"{p} = {v:.3f} +/- {e:.3f}")
-
-wdir = os.getcwd()
-outfile = wdir+'/Collins21.out'
-with open(outfile,'w') as of:
-    for fi in fit_info:
-        of.write(fi)#, sep = '\n')
-        of.write('\n')
-    of.write(str(m.errors))
-    of.write('\n')
+# #-- save theoretical calculations of Asymm.
+# outdata = {}
+# for ie in ['COMPASS10','COMPASS04']:
+#     for proj in data[ie]:
+#         data[ie][proj]['proj'] = proj
+#     outdata[ie] = pd.concat(data[ie])
+#
+# data['HERMES'].to_csv('Hermes.out',sep=' ')
+# data['JLAB'].to_csv('JLab.out',sep=' ')
+# outdata['COMPASS10'].to_csv('Compass2010_p.out',sep=' ')
+# data['COMPASS10']['x'].to_csv('x_Compass2010_p.out',sep=' ')
+# data['COMPASS10']['z'].to_csv('z_Compass2010_p.out',sep=' ')
+# data['COMPASS10']['p'].to_csv('p_Compass2010_p.out',sep=' ')
+#
+# outdata['COMPASS04'].to_csv('Compass2004_D.out',sep=' ')
+# data['COMPASS04']['x'].to_csv('x_Compass2004_D.out',sep=' ')
+# data['COMPASS04']['z'].to_csv('z_Compass2004_D.out',sep=' ')
+# data['COMPASS04']['p'].to_csv('p_Compass2004_D.out',sep=' ')
+#
+#
+# #-- print chi2 output
+# fit_info = [
+#     f"chi = {m.fval:.1f}",
+#     f"number of params =  {m.nfit:.1f}"
+# ]
+# for p, v, e in zip(m.parameters, m.values, m.errors):
+#     fit_info.append(f"{p} = {v:.3f} +/- {e:.3f}")
+#
+# wdir = os.getcwd()
+# outfile = wdir+'/Collins21.out'
+# with open(outfile,'w') as of:
+#     for fi in fit_info:
+#         of.write(fi)#, sep = '\n')
+#         of.write('\n')
+#     of.write(str(m.errors))
+#     of.write('\n')
+#     of.write(m.params)
+#
+# #-- print minimizer output
+# with open(outfile,'w') as of:
+#     of.write(repr(m.fmin))
+#
+# #-- print covariance matrix
+# with open(outfile,'w') as of:
+#     of.write(repr(m.covariance))
